@@ -1,0 +1,275 @@
+$ts-result-padding: 24px
+
+.ts-result
+    background: $color-white
+    border: 1px solid $border-color
+    border-radius: $border-radius
+    cursor: pointer
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin: 8px 0
+    min-height: 120px
+    padding: 12px 16px
+    transition: all 0.3s ease-in-out
+    @media screen and (min-width: $media--desktop)
+        padding: $ts-result-padding
+        min-height: 230px
+        
+        &:first-child
+            margin-top: 0
+
+        
+
+    &:hover
+        border-color: $color-primary
+    
+    &:active
+        background: $color-primary--light
+    
+    a
+        text-decoration: none
+
+        &:hover
+            text-decoration: underline
+
+    &__body
+        display: flex
+        width: 100%
+        flex-grow: 1
+        @media screen and (min-width: $media--desktop)
+            flex-direction: row-reverse
+        
+    &__footer
+        cursor: default
+        border-top: 1px solid $border-color
+        display: flex
+        align-items: center
+        padding: $ts-result-padding
+        margin-left: -$ts-result-padding
+        margin-right: -$ts-result-padding
+        margin-bottom: -$ts-result-padding
+
+    &__company
+        text-align: right
+        flex-shrink: 0
+        width: 100px
+        @media screen and (min-width: $media--desktop)
+            width: 135px
+            margin-right: 40px  
+    
+        &-img
+            margin-bottom: 16px
+            max-width: 100%
+
+    &__content
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        width: 100%
+        @media screen and (min-width: $media--desktop)
+            margin-top: -$ts-result-padding + 8px
+            margin-bottom: 8px
+
+    &__price-wrap
+        margin-left: auto
+        text-align: right
+
+    &__price
+        color: $color-primary
+        font-size: $font-size--lg
+        font-weight: 500
+        @media screen and (min-width: $media--desktop)
+            font-size: $font-size--xl
+
+    &__info
+        align-items: flex-start
+        display: flex
+    
+    &__routes
+        width: 100%
+
+    &__route
+        align-items: center
+        display: flex
+        margin-right: 28px
+        padding: 8px 0
+
+        &:first-child
+            padding-top: 16px
+            border-top: 0
+
+        @media screen and (min-width: $media--desktop)
+            border-top: 1px solid $border-color
+            padding: 18px
+            margin-right: 0
+            width: 100%
+   
+    &__duration
+        margin-left: 28px
+
+    &__time, &__title
+        color: $color-dark
+        margin-bottom: 4px
+        line-height: 19px
+
+    &__time
+        @media screen and (min-width: $media--desktop)
+            font-size: $font-size--xxl
+            line-height: 38px
+        
+        &--small
+            @media screen and (min-width: $media--desktop)
+                font-size: $font-size--lg
+                line-height: 21px
+
+    &__subtitle
+        color: $color-dark
+        font-size: $font-size--sm
+        margin-bottom: 6px
+        line-height: 17px
+
+        &--link
+            color: $color-primary
+            text-decoration: none
+
+    &__description
+        color: $color-secondary
+        font-size: $font-size--sm
+        line-height: 17px
+
+    &__direction
+        &--between
+            margin: 0 8px
+            @media screen and (min-width: $media--desktop)
+                flex-grow: 1
+                margin: 0 20px
+        &--to
+            text-align: right
+
+    &__service
+        cursor: pointer
+        display: flex
+        align-items: center
+        margin-right: 30px
+
+        &-icon
+            margin-right: 8px
+
+        &-label
+            color: $color-secondary
+
+    &__buy
+        margin-left: 32px
+        min-width: 150px
+        display: block
+
+    &__plane
+        display: block
+        text-align: center
+
+        &-icon
+            display: block
+            margin-bottom: 4px
+
+    &__label
+        display: block
+        font-size: $font-size--xs
+        color: $color-primary
+
+    &__progress-wrap
+        align-items: center
+
+        .ts-result__plane
+            position: relative
+
+    &__progress
+        flex-grow: 1
+        margin: 0 10px
+        text-align: center
+        position: relative
+
+        &-bar
+            display: block
+            background: $color-gray
+            border-radius: 6px
+            height: 4px
+            margin: 12px 0
+            width: 100%
+        
+        &-route
+            display: flex
+    
+    &__transfer
+        margin: 0 4px
+
+    &__details-wrap
+        border-radius: $border-radius
+        border: 1px solid $border-color
+        padding: 24px
+        margin: 8px 0
+        
+        &:last-child
+            margin-bottom: 24px    
+    
+    &__link
+        display: block
+        color: $color-primary
+        padding: 6px 0
+    
+.ts-result__details
+    margin-top: 24px
+
+    @media screen and (min-width: $media--desktop)
+        display: flex
+
+    &-route
+        @media screen and (min-width: $media--desktop)
+            width: 60%
+    
+    &-info
+        margin-top: 24px
+        @media screen and (min-width: $media--desktop)
+            margin-top: 0
+            width: 40%
+
+    &-top, &-bottom
+        align-items: baseline
+        display: flex
+        position: relative
+        padding-left: 24px
+    
+    &-top
+        padding-bottom: 26px
+
+        &::before
+            content: ''
+            position: absolute
+            display: block
+            width: 2px
+            left: 10px
+            top: 32px
+            bottom: 8px
+            background: $border-color
+
+    &-time
+        margin-right: 24px
+    
+    &-row
+        display: flex
+        align-items: baseline
+
+    &-more
+        margin-left: 20px
+
+    &-transfer
+        margin-bottom: 4px
+
+    .ts-result__plane
+        left: 0
+        position: absolute
+        
+    
+.ts-result__details + .ts-result__details
+    border-top: 1px dashed $border-color
+    padding-top: 24px

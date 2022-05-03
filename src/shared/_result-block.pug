@@ -1,0 +1,171 @@
+mixin result-route(route)
+  .ts-result__route
+
+    .ts-result__direction.ts-result__direction--from
+      .ts-result__time 09:25
+      .ts-result__description.d-lg-none NQZ
+      .ts-result__subtitle.d-none.d-lg-block Нурсултан, Казахстан
+      .ts-result__description.d-none.d-lg-block 03 июнь 2020
+
+    .ts-result__direction.ts-result__direction--between 
+      .ts-result__title.d-lg-none -
+
+      .ts-result__progress-wrap.d-none.d-lg-flex
+        .ts-result__plane
+          img(src=`/assets/icons/plane-start.svg`).ts-result__plane-icon
+          .ts-result__label NQZ
+
+        .ts-result__progress  
+          .ts-result__description В пути: 1 час 30 мин.
+          .ts-result__progress-route
+            .ts-result__progress-bar
+
+            if route.transfers > 0
+              .ts-result__transfer
+                img(src=`/assets/icons/transfer.svg`).ts-result__transfer-icon
+                .ts-result__label OVB
+
+              .ts-result__progress-bar
+
+          if route.transfers == 1
+            .ts-result__description #{route.transfers} пересадка
+          else if route.transfers > 1 
+            .ts-result__description #{route.transfers} пересадки
+          else
+            .ts-result__description без пересадок
+
+        .ts-result__plane
+          img(src=`/assets/icons/plane-end.svg`).ts-result__plane-icon
+          .ts-result__label NQZ
+
+    .ts-result__direction.ts-result__direction--to
+      .ts-result__time 10:55
+      .ts-result__description.d-lg-none ALA
+      .ts-result__subtitle.d-none.d-lg-block Алматы, Казахстан
+      .ts-result__description.d-none.d-lg-block 03 июнь 2020
+
+    .ts-result__duration.d-lg-none
+      .ts-result__subtitle В пути
+      .ts-result__description 1ч 30м
+
+mixin result-details-item(isLast)
+  .ts-result__details
+    .ts-result__details-route
+      .ts-result__details-top
+        .ts-result__plane
+          img(src=`/assets/icons/plane-start.svg`).ts-result__plane-icon
+
+        .ts-result__details-more
+          .ts-result__details-row
+            .ts-result__details-time
+              .ts-result__time.ts-result__time--small 09:25
+              .ts-result__description 12 июн.
+
+            .ts-result__details-direction
+              .ts-result__subtitle Нур-Султан (TSE)
+              .ts-result__description Нур-Султан
+
+      .ts-result__details-bottom
+        .ts-result__plane
+          img(src=`/assets/icons/plane-end.svg`).ts-result__plane-icon
+
+        .ts-result__details-more
+          if isLast == false
+            .ts-result__description.ts-result__details-transfer Пересадка: 4ч 20м
+
+          .ts-result__details-row
+            .ts-result__details-time
+              .ts-result__time.ts-result__time--small 10:55
+              .ts-result__description 12 июн.
+
+            .ts-result__details-direction
+              .ts-result__subtitle Алматы (ALA)
+              .ts-result__description Алматы
+
+    .ts-result__details-info
+      .ts-result__subtitle Авиакомпания: Air astana
+      .ts-result__subtitle Рейс: KC-852
+      .ts-result__subtitle В пути: 1 час 30 мин
+      a.ts-result__subtitle.ts-result__subtitle--link(href='#') Условия тарифа
+
+mixin result-details(route, label)
+  .ts-result__details-wrap
+    .ts-result__subtitle #{label}
+
+    - var n = 0;
+    while n <= route.transfers
+      - var isLast = n == route.transfers;
+      +result-details-item(isLast)
+      - n++;
+
+mixin result-block(index, company, tarifs, routes, selected)
+  - var href = '#result'+index;
+  - var id = 'result'+index;
+
+  .ts-result
+    .ts-result__body(data-toggle="collapse" href=href)
+      .ts-result__content
+        .d-lg-none
+          if tarifs
+            .ts-result__description #{tarifs} тарифа
+            .ts-result__price от 18 780 ₸
+          else
+            .ts-result__price 18 780 ₸
+
+        .ts-result__info
+          .ts-result__routes
+            -var totalTransfers = 0
+            each route in routes
+              +result-route(route)
+              - totalTransfers += route.transfers
+
+      .ts-result__company
+        img(src=`/assets/img/company/${company}.png`).ts-result__company-img
+        .d-lg-none
+          if totalTransfers == 1
+            .ts-result__subtitle #{totalTransfers} пересадка
+            .ts-result__description Новосибирск
+          else if totalTransfers > 1 
+            .ts-result__subtitle #{totalTransfers} пересадки
+            .ts-result__description (VNO) (KGR)
+          else
+            .ts-result__subtitle без пересадок
+
+
+    .ts-result__details-collapse.collapse(id=id)
+      - var detailsIndex = 0;
+      each route in routes
+        - var label = detailsIndex > 0 ? 'Обратно' : 'Туда';
+        +result-details(route, label)
+        - detailsIndex++;
+
+    .ts-result__footer.d-none.d-lg-flex
+      .ts-result__service(data-toggle="tooltip" title="Класс")
+        img(src=`/assets/icons/chair.svg`).ts-result__service-icon
+        span.ts-result__service-label Эконом лайт
+
+      .ts-result__service(data-toggle="tooltip" title="Багаж")
+        img(src=`/assets/icons/baggage.svg`).ts-result__service-icon
+        span.ts-result__service-label 15 кг
+
+      if selected
+        a(href="#").ts-result__link Условия тарифа
+
+      if selected
+        a(href="#").ts-result__link.ml-auto Сменить тариф
+        .ts-result__price-wrap
+          a.ts-result__price(href="#") 18 780 ₸
+      else
+        .ts-result__price-wrap
+          if tarifs
+            .ts-result__description #{tarifs} тарифа
+            a.ts-result__price(href="#") от 18 780 ₸
+          else
+            a.ts-result__price(href="#") 18 780 ₸
+
+        button.ts-button.ts-button--primary.ts-result__buy(data-toggle="modal" data-target="#tariff-modal") Купить
+
+    if selected
+      .d-lg-none.mt-2
+        a(href="#").ts-result__link Условия тарифа
+        a(href="#").ts-result__link Сменить тариф

@@ -1,0 +1,81 @@
+mixin sidebar
+  aside.ts-sidebar
+
+    .ts-sidebar__box.js-box
+      h3.ts-sidebar__title.js-box-toggle Сортировать по
+
+      .ts-sidebar__box-block.js-box-content
+        .dropdown#sortDropdown
+          button.dropdown-toggle(type="button" data-toggle="dropdown") По цене
+
+          .dropdown-menu
+            a.dropdown-item(href="#") По цене 
+            a.dropdown-item(href="#") По дате 
+
+    .ts-sidebar__box.js-box
+      h3.ts-sidebar__title.js-box-toggle Цена
+
+      .ts-sidebar__box-block.js-box-content
+        .ts-slider
+          .ts-slider__header
+            .ts-slider__step.ts-slider__step--from 18 780 ₸
+            .ts-slider__step.ts-slider__step--to 48 320 ₸
+          #priceSlider.js-slider(data-from="18780" data-to="48320")
+
+    //- hr.ts-sidebar__hr
+    .ts-sidebar__box.js-box
+      h3.ts-sidebar__title.js-box-toggle Пересадки
+
+      .ts-sidebar__box-block.js-box-content
+        +checkbox('Без пересадок')
+        +checkbox('1 пересадка')
+        +checkbox('2 пересадки')
+
+    .ts-sidebar__box.js-box
+      h3.ts-sidebar__title.js-box-toggle Время в пути
+
+      .ts-sidebar__box-block.js-box-content 
+        .ts-slider
+          .ts-slider__header
+            .ts-slider__step.ts-slider__step--from 1ч 30м
+            .ts-slider__step.ts-slider__step--to 4ч 22м
+          #timeSlider.js-slider(data-from="90" data-to="262")
+
+    .ts-sidebar__box.js-box
+      h3.ts-sidebar__title.js-box-toggle Авиакомпании
+
+      .ts-sidebar__box-block.js-box-content
+        +checkbox('Все')
+        +checkbox('Air Astana')
+        +checkbox('Fly Arystan')
+        +checkbox('Qazaq Air')
+        +checkbox('SCAT')
+
+    .ts-sidebar__box.js-box.is--closed
+      h3.ts-sidebar__title.js-box-toggle Багаж
+
+      .ts-sidebar__box-block.js-box-content.collapse 
+        .ts-slider
+          .ts-slider__header
+            .ts-slider__step.ts-slider__step--from 0 кг.
+            .ts-slider__step.ts-slider__step--to 20 кг.
+          #baggageSlider.js-slider(data-from="0" data-to="20")
+
+    .ts-sidebar__box.js-box.is--closed
+      h3.ts-sidebar__title.js-box-toggle Аэропорты
+
+      .ts-sidebar__box-block.js-box-content.collapse
+        +checkbox('Все')
+        +checkbox('NQZ')
+        +checkbox('ALA')
+        +checkbox('TSE')
+
+    .ts-sidebar__box.js-box.is--closed
+      h3.ts-sidebar__title.js-box-toggle Время пересадки
+
+      .ts-sidebar__box-block.js-box-content.collapse
+        .ts-slider
+          .ts-slider__header
+            .ts-slider__step.ts-slider__step--from 10м
+            .ts-slider__step.ts-slider__step--to 60м
+          #transferSlider.js-slider(data-from="10" data-to="60")

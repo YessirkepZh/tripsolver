@@ -1,0 +1,35 @@
+include shared/_mixins
+
+include company/_purpose
+include company/_info
+include company/_security
+include company/_warning
+
+doctype html
+html(lang="ru")
+    +head('Company')
+
+    body
+        .ts-page
+            +header
+            +steps
+            section.ts-flight
+                .container
+                    .row
+                        .col-lg-9
+                            +flight-result
+
+                            section.ts-flight__content
+                                h3.ts-heading Цель поездки
+
+                                +company-purpose
+                                +company-info
+                                +company-security
+                                +company-warning
+
+                                +flight-actions("Отправить на подтверждение")
+
+                        .col-lg-3
+                            +details
+        +mobile-menu
+        +footer

@@ -1,0 +1,137 @@
+$seats-taken: #A1ADBC
+$seats-available: $color-primary
+$seats-unavailable: $color-white
+$seats-selected: #65985D
+
+.ts-seats
+    font-size: $font-size--sm
+    line-height: 20px
+    
+    &__text
+
+    &__description
+        color: $color-muted
+    
+    &__selected-info
+
+    &__cell
+        background-color: $seats-available
+        border-radius: $border-radius
+        background-position: center center
+        background-repeat: no-repeat
+        cursor: pointer
+        transition: $transition
+
+        width: 26px
+        height: 26px
+        flex-shrink: 0
+
+        &:hover
+            background-color: darken($seats-available, 5)
+
+        &--placeholder
+            background: none
+            font-size: $font-size--sm
+            line-height: 26px
+            text-align: center
+            cursor: default
+            
+            &:hover
+                background-color: transparent
+
+        &--selected
+            background-color: $seats-selected
+
+            &:hover
+                background-color: darken($seats-selected, 5)
+
+        &--exit
+            background-image: url('assets/icons/seats/exit.svg')
+        
+        &--exit-premium
+            background-image: url('assets/icons/seats/exit-premium.svg')
+
+        &--exit-extra
+            background-image: url('assets/icons/seats/exit-extra.svg')
+
+        &--premium
+            background-image: url('assets/icons/seats/premium.svg')
+        
+        &--extra
+            background-image: url('assets/icons/seats/extra.svg')
+
+        &--taken
+            background-color: $seats-taken
+            cursor: not-allowed
+            &:hover
+                background-color: $seats-taken
+
+        &--unavailable
+            background-color: $seats-unavailable
+            border: 1px solid $border-color
+            position: relative
+            cursor: not-allowed
+
+            &:hover
+                background-color: $seats-unavailable
+
+            &::before
+                display: block
+                position: absolute
+                left: 11px
+                top: -4px
+                content: ''
+                width: 1px
+                background: $border-color
+                height: 32px
+                transform: rotate(45deg)
+
+    &__legend
+        padding: 0
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        // padding: 10px
+        
+        &-item
+            width: 100%
+            display: flex
+            align-items: center
+            margin: 8px 0
+
+            @media screen and (min-width: $media--mobile)
+                width: 50%
+
+            @media screen and (min-width: $media--desktop)
+                width: 32%
+
+            label
+                margin-left: 8px
+                line-height: 20px
+                font-size: $font-size--xs
+    
+                @media screen and (min-width: $media--desktop)
+                    font-size: $font-size--sm
+
+            .ts-seats__cell
+                // margin-top: 2px
+    
+    &__table
+        padding: 12px
+        
+        .ts-seats__cell
+            margin-right: 2px    
+            margin-bottom: 2px
+
+            &:last-child
+                margin-right: 0    
+
+    &__row
+        display: flex
+
+    &__wrap
+        background: $color-light
+        height: 240px
+        margin: 20px 0
+        border-bottom: 1px solid $seats-taken
+        overflow-x: auto

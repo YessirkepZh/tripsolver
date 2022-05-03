@@ -1,0 +1,48 @@
+mixin passenger-extras
+    section.ts-extras
+        .ts-extras__block
+            h4.ts-subheading Особые требования
+
+            .ts-form.ts-extras__form
+                .ts-flight__row.ts-flight__row--md
+                    .ts-form__group
+                        label.ts-form__label Особые потребности
+
+                        .dropdown.js-dropdown
+                            button.dropdown-toggle.ts-form__input(type="button" data-toggle="dropdown") Не выбрано
+
+                            .dropdown-menu
+                                a.dropdown-item(href="#") Не выбрано
+                                a.dropdown-item(href="#") Сопровождение 
+
+                    .ts-form__group
+                        label.ts-form__label Заявка на питание (если возможно)
+
+                        .dropdown.js-dropdown
+                            button.dropdown-toggle.ts-form__input(type="button" data-toggle="dropdown") Не выбрано
+
+                            .dropdown-menu
+                                a.dropdown-item(href="#") Не выбрано
+                                a.dropdown-item(href="#") Ланч 
+                                a.dropdown-item(href="#") Полдник 
+                                a.dropdown-item(href="#") Напиток 
+
+        .ts-extras__block
+            h4.ts-subheading Программы лояльности
+
+            .ts-form.ts-extras__form
+                .ts-flight__row.ts-flight__row--md
+                    .ts-form__group
+                        label.ts-form__label Программа лояльности авиакомпании
+
+                        .dropdown.js-dropdown
+                            button.dropdown-toggle.ts-form__input(type="button" data-toggle="dropdown") Не выбрано
+
+                            .dropdown-menu
+                                a.dropdown-item(href="#") Не выбрано
+                                a.dropdown-item(href="#") Бизнес 
+
+                    .ts-form__group
+                        label.ts-form__label Программа часто летающих пассажиров
+                        input.ts-input.ts-form__input(type="text" placeholder="Номер программы")
+

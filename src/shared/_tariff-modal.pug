@@ -1,0 +1,40 @@
+mixin tariff-modal
+  #tariff-modal.modal.fade(tabindex="-1" role="dialog")
+    .modal-dialog.modal-dialog--centered(role="document")
+      .modal-content
+        .modal-header
+          h3.modal-title Выберите тариф
+
+          button.button.button--close.close(data-dismiss="modal") ×
+
+        .modal-body
+          .ts-tariff
+            - var n = 0;
+            while n < 9
+              .ts-tariff__item(class=(n === 1) ? 'ts-tariff__item--active' : '')
+                .ts-tariff__title Бюджетный
+
+                .ts-tariff__sum= '1' + n++ + ' 780 ₸'
+
+                .ts-tariff__description
+                  .ts-tariff__value
+                    .ts-icon
+                      include /assets/icons/yes.svg
+                    span Багаж до 10 кг
+                  .ts-tariff__value
+                    .ts-icon
+                      include /assets/icons/yes.svg
+                    span Ручная кладь до 5 кг
+                  .ts-tariff__value
+                    .ts-icon
+                      include /assets/icons/yes.svg
+                    span Обмен
+                  .ts-tariff__value
+                    .ts-icon
+                      include /assets/icons/no.svg
+                    span Возврат
+
+                .ts-tariff__label Выбрано
+
+          .modal-footer
+            button.ts-button.ts-button--primary Продолжить

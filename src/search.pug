@@ -1,0 +1,85 @@
+include shared/_mixins
+
+doctype html
+html(lang="ru")
+  +head('Search')
+
+  body
+    .ts-page
+      +header
+
+      +promo-light
+
+      section.ts-section.ts-section--gray
+        .container
+          .row
+            .col-md-3
+              +sidebar
+
+            .col-md-9
+              - var results = [
+              -   { 
+              -     company: `air-astana`,
+              -     tarifs: 3,
+              -     routes: [
+              -       {
+              -         transfers: 1
+              -       },
+              -       {
+              -         transfers: 0
+              -       }
+              -     ]
+              -   }, 
+              -   { 
+              -     company: `fly-arystan`,
+              -     tarifs: 2,
+              -     routes: [
+              -       {
+              -         transfers: 2
+              -       }
+              -     ]
+              -   }, 
+              -   {
+              -     company: `qazaq-air`,
+              -     tarifs: 3,
+              -     routes: [
+              -       {
+              -         transfers: 1
+              -       }
+              -     ]
+              -   }, 
+              -   {
+              -     company: `scat`,
+              -     tarifs: 3,
+              -     routes: [
+              -       {
+              -         transfers: 0
+              -       }
+              -     ]
+              -   }, 
+              -   { 
+              -     company: `air-astana`,
+              -     routes: [
+              -       {
+              -         transfers: 0
+              -       }
+              -     ]
+              -   }, 
+              -   { 
+              -     company: `fly-arystan`,
+              -     routes: [
+              -       {
+              -         transfers: 1
+              -       },
+              -       {
+              -         transfers: 2
+              -       }
+              -     ]
+              -   }
+              - ];
+              - var index = 0;
+              each r in results
+                +result-block(index++, r.company, r.tarifs, r.routes)
+    +tariff-modal
+    +mobile-menu
+    +footer

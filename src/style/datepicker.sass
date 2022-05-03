@@ -1,0 +1,89 @@
+.flatpickr-calendar
+  font-family: $font--brand
+  width: 334.875px
+
+  &.open
+    background: #FFFFFF
+    border: 2px solid #0384C8
+    border-radius: 4px
+    // padding: 10px
+
+  &::after,
+  &::before
+    display: none
+
+.flatpickr-months
+  font-size: 16px
+  line-height: 20px
+  color: #30333C
+  display: flex
+  justify-content: flex-start
+  padding: 0 14px 5px
+
+  .flatpickr-month
+    text-align: left
+    border-bottom: 1px solid #D8E0E9
+    height: auto
+
+  .flatpickr-current-month
+    margin-bottom: 10px
+    position: static
+    text-align: left
+    font-size: 16px
+    line-height: 20px
+    color: #30333C
+    padding-top: 13px
+
+    input.cur-year
+      padding-left: 0
+
+  .flatpickr-monthDropdown-months
+    -webkit-appearance: none
+    appearance: none
+    padding-left: 0
+
+.flatpickr-innerContainer
+  margin-top: 10px
+  padding: 10px 14px 5px
+
+  .flatpickr-weekday
+    color: #30333C
+    font-size: 16px
+    line-height: 20px
+    font-weight: 400
+
+    &:last-child
+      color: #777B87
+
+    &:nth-last-child(2)
+      color: #777B87
+
+.flatpickr-day
+  font-size: 16px
+  text-align: center
+  color: #5B5D5F
+  border-radius: 4px
+
+  &.flatpickr-disabled
+    color: #95979D
+
+  &:hover
+    border-color: transparent
+    background: rgba(0, 133, 204, 0.15)
+
+  &.today
+    border: 1px solid #D8E0E9
+    font-size: 16px
+    color: #95979D
+
+  &.is--selected-date
+    background: #0085CC
+    color: #fff
+
+.shortcut-buttons-flatpickr-button
+  font-size: 16px
+  line-height: 19px
+  color: #0085CC
+  background: none
+  padding: 20px 0
+  border: 0

@@ -1,0 +1,57 @@
+@import '../libs/nouislider/nouislider'
+
+.noUi-connect
+    background: $color-primary
+
+.noUi-target
+    box-shadow: none
+    border: none
+    height: 2px
+    background: $color-gray--dark
+    padding: 0 10px
+
+.noUi-horizontal .noUi-handle
+    width: 20px
+    height: 20px
+    border-radius: 4px
+    top: -8px
+    background: $color-white
+    box-shadow: none
+    border: 1px solid $color-gray--dark
+    outline: none
+
+    &::before, &::after
+        width: 2px
+        height: 6px
+        left: 6px
+        top: 6px
+        background: $color-gray--dark
+
+    &::after
+        left: 10px
+
+    &.noUi-handle-lower
+        right: -10px
+
+    &.noUi-handle-upper
+        right: -10px
+
+    &.noUi-active
+        background: $color-primary
+
+        &::before, &::after
+            border-color: $color-primary
+            background: $color-white
+
+.ts-slider
+    position: relative
+    color: $color-dark
+
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 16px
+
+    &__step
+        font-size: $font-size--sm

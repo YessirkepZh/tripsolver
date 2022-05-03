@@ -1,0 +1,87 @@
+mixin mainmenu
+  nav.ts-menu
+    ul.ts-menu__list
+      li.ts-menu__item
+        a.ts-menu__link(href="") Поиск
+      li.ts-menu__item
+        a.ts-menu__link(href="") Управление поездками
+      li.ts-menu__item.ts-menu__item--has-menu
+        //- is--show_menu
+        a.ts-menu__link(href="") Дополнительно
+        .ts-submenu
+          .ts-submenu__content
+            .container
+              .row.row-cols-3
+                .col
+                  .ts-submenu__title Настройки туроператора
+
+                  ul.ts-submenu__list
+                    li.ts-submenu__item
+                      a.ts-submenu__link(href="") Мои путешественники
+
+                    li.ts-submenu__item
+                      a.ts-submenu__link(href="") Мои организаторы
+
+                  .ts-submenu__title Настройки туроператора
+
+                  ul.ts-submenu__list
+                    li.ts-submenu__item
+                      a.ts-submenu__link(href="") Мои путешественники
+
+                    li.ts-submenu__item
+                      a.ts-submenu__link(href="") Мои организаторы
+
+      li.ts-menu__item.ts-menu__item--has-menu
+        a.ts-menu__link(href="") Помощь
+
+mixin mini-menu
+  .ts-sidemenu
+    a.ts-sidemenu__link.ts-sidemenu__link--active(href="")
+      span.ts-sidemenu__icon
+        include /assets/icons/search.svg
+      span.ts-sidemenu__text Поиск
+
+    a.ts-sidemenu__link(href="")
+      span.ts-sidemenu__icon
+        include /assets/icons/ticket.svg
+      span.ts-sidemenu__text Управление поездками
+
+    a.ts-sidemenu__link(href="")
+      span.ts-sidemenu__icon
+        include /assets/icons/people.svg
+      span.ts-sidemenu__text Дополнительно
+
+    a.ts-sidemenu__link(href="")
+      span.ts-sidemenu__icon
+        include /assets/icons/help.svg
+      span.ts-sidemenu__text Помощь
+
+mixin mobile-menu
+  .ts-mobile-menu
+    header.ts-mobile-menu__header
+      a.ts-logo(href="/")
+        img.ts-logo__media(src="/assets/logo.png", alt="logo", width="136")
+
+      button.ts-mobile-menu__close-btn.js--toggle-menu(type="button")
+        //- img(src="/assest/icons/", alt="")
+        include /assets/icons/close.svg
+
+    .ts-mobile-menu__list
+      +mini-menu
+
+    footer.ts-mobile-menu__footer
+      .ts-lang-chooser.dropdown
+        button.ts-button.ts-lang-chooser__button.dropdown-toggle(type="button" data-toggle="dropdown")
+          img(src="/assets/lang/ru.png" alt="ru")
+          span Язык: Русский
+
+        .dropdown-menu.ts-lang-chooser__dropdown
+          a.dropdown-item.ts-lang-chooser__item(href="#")
+            img(src="/assets/lang/ru.png" alt="ru")
+            span Русский
+          a.dropdown-item.ts-lang-chooser__item(href="#")
+            img(src="/assets/lang/kk.png" alt="ru")
+            span Қазақша
+          a.dropdown-item.ts-lang-chooser__item(href="#")
+            img(src="/assets/lang/en.png" alt="ru")
+            span English

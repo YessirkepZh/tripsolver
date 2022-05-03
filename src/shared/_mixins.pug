@@ -1,0 +1,94 @@
+include _promo
+include _menu
+include _sidebar
+include _result-block
+include _steps
+include _details
+include _flight-actions
+include _flight-result
+include _tariff-modal
+
+mixin head(title)
+  head
+    title= title
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css")
+    link(rel="stylesheet" href="grid.css")
+    link(rel="stylesheet" href="index.sass")
+
+mixin header
+  header.ts-page__header.ts-header
+    button.ts-burger-menu.js--toggle-menu(type="button")
+      include /assets/icons/burder.svg
+
+    a.ts-logo(href="/")
+      img.ts-logo__media(src="/assets/logo.png" alt="logo" width="136")
+
+    +mainmenu
+
+    .ts-header__last-block
+      .ts-toolbox.has--border
+        .ts-lang
+          button.ts-button.ts-lang__button(type="button" data-toggle="dropdown")
+            img(src="/assets/lang/ru.png" alt="ru")
+          .dropdown-menu.dropdown-menu-right.ts-lang__dropdown
+            a.dropdown-item.ts-lang__item(href="#")
+              img(src="/assets/lang/ru.png" alt="ru")
+              span Русский
+            a.dropdown-item.ts-lang__item(href="#")
+              img(src="/assets/lang/kk.png" alt="ru")
+              span Қазақша
+            a.dropdown-item.ts-lang__item(href="#")
+              img(src="/assets/lang/en.png" alt="ru")
+              span English
+
+        .ts-notification-center
+          img(src="/assets/icons/notification-on.svg" alt="")
+
+      .ts-auth
+        .ts-auth__icon
+          img(src="/assets/icons/profile.svg" alt="")
+
+        .ts-auth__text Профиль
+
+mixin footer
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+  script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous")
+  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous")
+
+  script.
+    $( document ).ready(function() {
+      // не закрывать подменю для выбора пассажиров
+      $(document).on('click', '.is--select-passengers .dropdown-menu', function (e) {
+        e.stopPropagation();
+      });
+    });
+  script(src="index.js")
+  script(src="scripts/sidebar.js")
+  script(src="scripts/result.js")
+  script(src="scripts/flight.js")
+  script(src="scripts/seats.js")
+
+
+mixin checkbox(label)
+  .ts-checkbox-wrap
+    label.ts-checkbox
+      input(type="checkbox")
+      .ts-checkbox__pseudo
+      span.ts-checkbox__text=label
+
+- let radioIndex = 0;
+mixin radio(label, name, description)
+  - const radioId = `name${++radioIndex}`;
+  .ts-radio
+    input(type="radio" name=name id=radioId)
+    label(for=radioId)
+      .ts-radio__pseudo
+      if description
+        span.ts-radio__content
+          span.ts-radio__text=label
+          span.ts-radio__description=description
+      else
+        span.ts-radio__content
+          span.ts-radio__text=label

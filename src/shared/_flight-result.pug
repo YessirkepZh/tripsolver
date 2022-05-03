@@ -1,0 +1,13 @@
+mixin flight-result
+    h4.ts-subheading.d-lg-none.my-2 Ваш выбор:
+    - const route = 
+    -   { 
+    -     company: `fly-arystan`,
+    -     tarifs: 0,
+    -     routes: [
+    -       {
+    -         transfers: 0
+    -       }
+    -     ]
+    -   };
+    +result-block(0, route.company, route.tarifs, route.routes, true)

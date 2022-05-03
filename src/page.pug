@@ -1,0 +1,22 @@
+include shared/_mixins
+
+doctype html
+html(lang="ru")
+  +head('Search')
+
+  body
+    .ts-page
+      +header
+
+      +promo-light
+
+      .ts-loading(style="width: 20%")
+
+      section.ts-section.ts-section--gray
+        .container
+          .row
+            .col-12
+              div Найдено 16
+
+    +mobile-menu
+    +footer

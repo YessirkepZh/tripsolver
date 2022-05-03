@@ -1,0 +1,18 @@
+mixin company-purpose
+    .ts-company__block
+        form.ts-form
+            .ts-flight__row.ts-flight__row--md
+                .ts-form__group
+                    label.ts-form__label * Цель поездки
+
+                    .dropdown.js-dropdown
+                        button.dropdown-toggle.ts-form__input(type="button" data-toggle="dropdown") Встреча с партнером
+
+                        .dropdown-menu
+                            a.dropdown-item(href="#") Встреча с партнером
+                            a.dropdown-item(href="#") Туризм 
+
+            .ts-flight__row.ts-flight__row--md
+                .ts-form__group
+                    label.ts-form__label * Имя партнера
+                    input.ts-input.ts-form__input(type="text" placeholder="Имя партнера")

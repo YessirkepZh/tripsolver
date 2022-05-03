@@ -1,0 +1,310 @@
+@import 'chooser'
+
+.ts-promo
+  background: #F5F8FC
+  padding: 60px 0
+
+  font-size: 16px
+  line-height: 19px
+  color: #28282E
+
+  &__header
+    display: flex
+    align-items: center
+    padding-bottom: 35px
+
+  &__title
+    margin: 0
+    font-weight: 500
+    margin-right: 40px
+    font-size: 18px
+    line-height: 21px
+
+    @media screen and (min-width: $media--tablet)
+      font-size: 32px
+      line-height: 38px
+
+  &__infoblock
+    display: flex
+    margin-bottom: 24px
+
+  &__goal
+    max-width: 520px
+    margin-right: 18px
+
+  &__switcher
+    display: flex
+
+    @media screen and (min-width: $media--tablet)
+      padding-left: 0
+
+  &__footer
+    @media screen and (min-width: $media--tablet)
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+  &__save-btn
+    margin-top: 20px
+    @media screen and (min-width: $media--tablet)
+      margin-top: 0
+
+  &__search
+    display: flex
+    align-items: center
+    text-decoration: none
+    border: 0
+    background: none
+    font-size: 16px
+    line-height: 19px
+    color: #28282E
+    padding: 0
+
+    .ts-icon
+      margin-right: 10px
+
+  &--light
+    background-color: #fff
+    padding: 24px 0
+
+    .ts-promo__infoblock
+      margin-bottom: 0
+
+.ts-select-passengers
+  position: relative
+  height: 100%
+  width: 100%
+  background: #fff
+  border: 1px solid #D8E0E9
+  // padding-right: 15px
+  border-radius: 0 0 4px 4px
+  border: 1px solid #D8E0E9
+
+  @media screen and (min-width: $media--tablet)
+    margin-right: -2px
+    border-left: 0
+
+  &.show,
+  &:focus
+    box-shadow: inset 0 0px 0px 2px #0384C8
+    border-radius: 4px 0px 0px 4px
+
+  &::after
+    content: ''
+    position: absolute
+    right: 15px
+    top: 50%
+    margin-top: -2.5px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 5px 5px 0 5px
+    border-color: #A1ADBC transparent transparent transparent
+
+  &.show
+    .ts-passengers-dropdown
+      display: initial
+
+  &__field
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 8px 16px
+    height: 100%
+    justify-content: center
+    background: none
+    border: none
+    outline: none
+    width: 100%
+
+    @media screen and (min-width: $media--tablet)
+      padding-top: 0
+      padding-bottom: 0
+
+    &:hover
+      cursor: pointer
+
+  &__label
+    font-size: 16px
+    line-height: 19px
+    color: #30333C
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+    &--gray
+      color: #777B87
+
+.ts-passengers-dropdown
+  position: absolute
+  top: 100%
+  display: none
+  min-width: 280px
+  margin-top: 5px
+  background-color: #fff
+  border: 2px solid #0384C8
+  border-radius: 4px
+  z-index: $z-index--m
+
+  &__box
+    border-bottom: 1px solid #D8E0E9
+    padding: 16px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__list
+    padding: 16px
+    display: flex
+    flex-direction: column
+
+.ts-radiobutton
+  position: relative
+  margin-bottom: 20px
+
+  &:hover
+    cursor: pointer
+
+  &__input
+    opacity: 0
+    position: absolute
+    width: 0
+    height: 0
+
+    &:checked + .ts-radiobutton
+      &__text
+        color: #0085CC
+
+        &::before
+          border-color: #0085CC
+
+        &::after
+          content: ''
+          position: absolute
+          left: 5px
+          // top: 50%
+          width: 10px
+          height: 10px
+          background-color: #0085CC
+          border-radius: 50%
+
+  &__text
+    font-size: 16px
+    line-height: 19px
+    color: #30333C
+    display: flex
+    align-items: center
+
+    &::before
+      content: ''
+      width: 20px
+      height: 20px
+      border: 2px solid #A1ADBC
+      display: inline-block
+      margin-right: 10px
+      border-radius: 50%
+
+.ts-counter
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 16px
+  line-height: 19px
+  color: #30333C
+  min-width: 74px
+
+  &__decrement,
+  &__increment
+    width: 22px
+    height: 22px
+    border-radius: 50%
+    border: 0
+    padding: 0
+    background: none
+    background-repeat: no-repeat
+
+    &:hover
+      cursor: pointer
+
+  &__decrement
+    background-image: url(/assets/icons/decrement.svg)
+
+  &__increment
+    background-image: url(/assets/icons/increment.svg)
+
+  &__value
+    margin: 0 10px
+
+    &--gray
+      color: #777B87
+
+.ts-switcher
+
+  &__box
+    background: #FFFFFF
+    border: 1px solid #D8E0E9
+    border-radius: 4px
+    width: 32px
+    height: 32px
+    margin: 15px 12px 0 0
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    transition: border .15s ease-in-out
+    padding: 6px
+
+    @media screen and (min-width: $media--tablet)
+      margin-top: 0
+      margin-right: 6px
+      width: 64px
+      height: 64px
+
+  .ts-radiobutton
+    position: absolute
+    width: 0
+    height: 0
+    opacity: 0
+
+  input:checked + .ts-switcher__box
+    border: 2px solid #0384C8
+
+    svg path
+      fill: #0085CC
+
+.dropdown-menu
+  display: none
+  z-index: $z-index--m
+
+  &.show
+    display: initial
+
+.ts-dropdown-menu
+  &__wrap
+    background-color: #fff
+    border: 2px solid #0384C8
+    border-radius: 4px
+    min-width: 320px
+
+  &__item
+    padding: 12px 20px
+    border-bottom: 1px solid #D8E0E9
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    & .--gray
+      color: #777B87
+      margin-left: 3px
+
+    &:hover
+      background: #F5F8FC
+      cursor: pointer
+
+  &__airport
+    font-size: 14px
+    line-height: 17px
+    color: #777B87

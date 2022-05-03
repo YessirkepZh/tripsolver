@@ -1,0 +1,60 @@
+mixin passenger-seats
+    section.ts-seats
+        h4.ts-subheading Выберите место для пассажира 1
+        article
+            .ts-seats__text Airbus a380
+            .ts-seats__description Эконом (оставшиеся места: 14)
+        .ts-seats__wrap
+            .ts-seats__table.js-seats-table
+
+        ul.ts-seats__legend
+            li.ts-seats__legend-item
+                .ts-seats__cell
+                label Свободное место
+
+            li.ts-seats__legend-item
+                .ts-seats__cell.ts-seats__cell--exit 
+                label Свободное место у выхода
+
+            li.ts-seats__legend-item
+                .ts-seats__cell.ts-seats__cell--unavailable 
+                label Место не доступно
+
+            li.ts-seats__legend-item
+                .ts-seats__cell.ts-seats__cell--premium 
+                label Место премиум класса
+
+            li.ts-seats__legend-item
+                .ts-seats__cell.ts-seats__cell--exit-premium 
+                label Место премиум класса у выхода
+
+            li.ts-seats__legend-item
+                .ts-seats__cell.ts-seats__cell--taken
+                label Место занято
+
+            li.ts-seats__legend-item
+                .ts-seats__cell.ts-seats__cell--extra
+                label Дополнительное место за плату
+
+            li.ts-seats__legend-item
+                .ts-seats__cell.ts-seats__cell--exit-extra
+                label Дополнительное место за плату у выхода
+
+            li.ts-seats__legend-item
+                .ts-seats__cell.ts-seats__cell--exit.ts-seats__cell--taken
+                label Место у выхода (должно быть зарезервировано в аэропорту)
+
+
+        article.ts-seats__selected-info
+            span.ts-seats__text Выбрано: 
+            span.ts-seats__description.js-seats-result F16
+
+        article.ts-flight__warning
+            img(src="/assets/icons/warning.svg" alt="Внимание")
+            p Срок удержания брони мест премиум-класса (за уплату) до совершения оплаты для авиакомпаний может различаться. 
+                | Он может составлять от 2 до 48 часов. Если в течение этого срока выбранных мест не будет совершена, выбор мест будут отменены. 
+                | Плата за места взимается в момент оформления билета и не подлежит возврату. 
+                br 
+                | Сбор за место премиум-класса подлежат возмещению
+
+

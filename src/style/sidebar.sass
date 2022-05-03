@@ -1,0 +1,54 @@
+.ts-sidebar
+  background: #FFF
+  border-radius: 4px
+  padding-top: 1px
+  padding-bottom: 1px
+
+  &__title
+    margin: 24px 0
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+    color: #303030
+    transition: $transition
+    cursor: pointer
+
+    &:hover
+      color: $color-primary
+
+  &__box
+    padding: 0 16px 24px
+    border-bottom: 1px solid #D8E0E9
+
+    &:before
+      content: ''
+      position: absolute
+      width: 0
+      height: 0
+      opacity: 0
+      border-style: solid
+      border-width: 5px 0 5px 5px
+      border-color: transparent transparent transparent transparent
+      transform: rotate(720deg) translate3d(0px,50%,0)
+      transform-origin: 0 100%
+      transition: $transition
+  
+    &.is--closed
+      // padding-bottom: 16px
+      padding-bottom: 0
+      position: relative
+  
+      &::before
+        opacity: 1
+        border-color: transparent transparent transparent #A1ADBC
+        transform: rotate(0deg) translate3d(0px,50%,0)
+  
+      .ts-sidebar
+        &__title
+          padding-left: 18px
+
+        // &__box-block
+          // display: none
+
+      &:last-child
+        border-bottom: 0

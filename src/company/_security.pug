@@ -1,0 +1,18 @@
+mixin company-security
+    .ts-company__block.ts-company__block--bordered
+        h4.ts-subheading.mt-0 Подтверждение безопасности
+
+        form.ts-form
+            .ts-flight__row.ts-flight__row--lg
+                .ts-form__group.mb-0
+                    label.ts-form__label Введите код подтверждение безопасности для этой поездки. 
+                    input.ts-input.ts-form__input(type="text" placeholder="Код подтверждения")
+                    small.ts-form__helper Если у вас нет кода нажмите “Сохранить поездку как шаблон” в верхнем правом углу и в дальнейшем сможете вернуться чтобы продолжить.
+
+    .ts-company__block.ts-company__block--bordered.mb-0
+        .ts-company__security
+            img(src="/assets/icons/security.svg" alt="Внимание")
+            article
+                p Из соображений безопасности, транспортировка опасных веществ в ручной клади и зарегистрированном багаже запрещена. Опасными веществами в том числе считаются взрывчатые вещества, аэрозоли и легковоспламеняющиеся жидкости. Ищите полный список запрещенных материалов на сайте перевозчика.
+                p.mb-0
+                    strong Оплачивая покупку, вы соглашаетесь с ограничениями на перевозку опасных веществ

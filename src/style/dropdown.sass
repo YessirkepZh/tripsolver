@@ -1,0 +1,57 @@
+.dropdown
+    font-size: $font-size--sm
+    position: relative
+
+    &-toggle
+        font-family: $font--brand
+        outline: none
+        appearance: none
+        border: 1px solid $border-color
+        border-radius: $border-radius
+        cursor: pointer
+        background: $color-white
+        display: flex
+        align-items: center
+        width: 100%
+        padding: 10px 32px 10px 16px
+        
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translate(0, -50%)
+            right: 6px
+            display: block
+            width: 24px
+            height: 24px
+            background-image: url('/assets/icons/dropdown.svg')
+            background-position: center center
+            transition: all 0.4s ease-in-out
+
+    &-menu
+        display: none
+        width: 100%
+        border: 1px solid $border-color
+        background: $color-white
+        border-radius: $border-radius
+        
+        &.show
+            display: block
+
+    &-item
+        cursor: pointer
+        display: block
+        color: $color-black
+        padding: 10px 16px
+        text-decoration: none
+        transition: all 0.2s ease-in-out
+
+        &:hover
+            background: $color-primary
+            color: $color-white
+
+    &.show
+        .dropdown-toggle
+            &::after
+                transform: translate(0, -50%) rotate(540deg)
+

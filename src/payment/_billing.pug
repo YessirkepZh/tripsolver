@@ -1,0 +1,96 @@
+mixin payment-billing
+    section.ts-billing
+        h4.ts-subheading Информация о выставлении счетов за перелеты
+
+        form.ts-form.ts-billing__form
+            .ts-flight__row.ts-flight__row--md
+                .ts-form__group
+                    label.ts-form__label Выставить счет
+
+                    .dropdown.js-dropdown
+                        button.dropdown-toggle.ts-form__input(type="button" data-toggle="dropdown") Временная карта
+
+                        .dropdown-menu
+                            a.dropdown-item(href="#") Временная карта
+                            a.dropdown-item(href="#") Постоянный счет 
+            
+            .ts-flight__row.ts-flight__row--md
+                .ts-form__group
+                    label.ts-form__label Тип платежной карты
+
+                    .dropdown.js-dropdown
+                        button.dropdown-toggle.ts-form__input(type="button" data-toggle="dropdown") Visa
+
+                        .dropdown-menu
+                            a.dropdown-item(href="#") Visa
+                            a.dropdown-item(href="#") MasterCard 
+
+                .ts-form__group
+                    label.ts-form__label Номер платежной карты
+                    input.ts-input.ts-form__input(type="text" placeholder="Номер карты")
+
+            .ts-flight__row.ts-flight__row--sm
+                .ts-form__group
+                    label.ts-form__label Срок окончания действия
+
+                    .dropdown.js-dropdown
+                        button.dropdown-toggle.ts-form__input(type="button" data-toggle="dropdown") Месяц
+
+                        .dropdown-menu
+                            a.dropdown-item(href="#") Январь
+                            a.dropdown-item(href="#") Февраль 
+                            a.dropdown-item(href="#") Март 
+                            a.dropdown-item(href="#") Апрель 
+                            a.dropdown-item(href="#") Май 
+                            a.dropdown-item(href="#") Июнь 
+                            a.dropdown-item(href="#") Июль 
+                            a.dropdown-item(href="#") Август 
+                            a.dropdown-item(href="#") Сентябрь 
+                            a.dropdown-item(href="#") Октябрь 
+                            a.dropdown-item(href="#") Ноябрь 
+                            a.dropdown-item(href="#") Декабрь 
+                
+                .ts-form__group
+                    label.ts-form__label Год
+
+                    .dropdown.js-dropdown
+                        button.dropdown-toggle.ts-form__input(type="button" data-toggle="dropdown") Год
+
+                        .dropdown-menu
+                            a.dropdown-item(href="#") 2020
+                            a.dropdown-item(href="#") 2021 
+                            a.dropdown-item(href="#") 2022 
+                            a.dropdown-item(href="#") 2023 
+                            a.dropdown-item(href="#") 2024
+                            a.dropdown-item(href="#") 2025 
+                            a.dropdown-item(href="#") 2026 
+                            a.dropdown-item(href="#") 2027
+                            a.dropdown-item(href="#") 2028 
+                            a.dropdown-item(href="#") 2029 
+                            a.dropdown-item(href="#") 2030 
+
+            .ts-flight__row.ts-flight__row--md
+                .ts-form__group
+                    label.ts-form__label Имя на карте
+                    input.ts-input.ts-form__input(type="text" placeholder="Имя")
+
+            .ts-flight__row.ts-flight__row--xxl
+                .ts-form__group
+                    label.ts-form__label Строка адреса 1
+                    input.ts-input.ts-form__input(type="text" placeholder="Адрес 1")
+            
+            .ts-flight__row.ts-flight__row--xxl
+                .ts-form__group
+                    label.ts-form__label Строка адреса 2
+                    input.ts-input.ts-form__input(type="text" placeholder="Адрес 2")
+
+            .ts-flight__row.ts-flight__row--md
+                .ts-form__group
+                    label.ts-form__label Город
+                    input.ts-input.ts-form__input(type="text" placeholder="Город")
+
+                .ts-form__group
+                    label.ts-form__label Почтовый индекс
+                    input.ts-input.ts-form__input(type="text" placeholder="Индекс")
+
+

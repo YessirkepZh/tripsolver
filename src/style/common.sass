@@ -1,0 +1,78 @@
+// start Button
+.ts-button
+  display: flex
+  align-items: center
+  font-family: $font--brand
+  font-weight: 500
+  color: #28282E
+  outline: none
+  text-align: center
+  vertical-align: middle
+  user-select: none
+  background-color: transparent
+  border: 1px solid transparent
+  padding: 11px 24px
+  font-size: 15px
+  line-height: 19px
+  border-radius: 4px
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+
+  &:hover
+    cursor: pointer
+
+  &:active
+    outline: none
+
+  .ts-icon
+    margin-right: 10px
+
+  &--outline
+    border: 1px solid #D8E0E9
+
+  &--primary
+    background-color: #0085CC
+    color: #fff
+
+    &:hover
+      background-color: darken($color-primary, 10)
+
+// end button
+
+// start Input
+.ts-input
+  display: block
+  width: 100%
+  font-size: 16px
+  line-height: 19px
+  padding: 17px 20px
+  font-weight: 400
+  color: #28282E
+  background-color: #fff
+  background-clip: padding-box
+  border: 1px solid #D8E0E9
+  border-radius: 4px
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+
+  @media screen and (min-width: $media--tablet)
+    padding: 22px 20px
+
+  &::placeholder
+    color: #95979D
+
+.fade
+  transition: $transition
+  &:not(.show)
+    opacity: 0
+
+.collapse
+  &:not(.show)
+    display: none
+
+.collapsing
+  position: relative
+  height: 0
+  overflow: hidden
+  transition: $transition
+
+.is--overflow
+  overflow: hidden

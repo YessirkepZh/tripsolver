@@ -1,0 +1,1006 @@
+[
+    {
+        "label": "F",
+        "type": "seats",
+        "seats": [
+            {
+                "index": "F8",
+                "type": "regular",
+                "isUnavailable": true,
+                "isTaken": false
+            },
+            {
+                "index": "F9",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F10",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F11",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "F12",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F13",
+                "type": "exit-premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F14",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F15",
+                "type": "exit-premium",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "F16",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "F17",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "F18",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "F19",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F20",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F21",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F22",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F23",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F24",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F25",
+                "type": "exit-extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F26",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F27",
+                "type": "exit-extra",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "F28",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F29",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F30",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F31",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F32",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "F33",
+                "type": "exit",
+                "isUnavailable": true,
+                "isTaken": false
+            }
+        ]
+    },
+    {
+        "label": "E",
+        "type": "seats",
+        "seats": [
+            {
+                "index": "E8",
+                "type": "regular",
+                "isUnavailable": true,
+                "isTaken": false
+            },
+            {
+                "index": "E9",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E10",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E11",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "E12",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E13",
+                "type": "exit-premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E14",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E15",
+                "type": "exit-premium",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "E16",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "E17",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "E18",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "E19",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E20",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E21",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E22",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "E23",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E24",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E25",
+                "type": "exit-extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E26",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "E27",
+                "type": "exit-extra",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "E28",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "E29",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E30",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E31",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "E32",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "E33",
+                "type": "exit",
+                "isUnavailable": true,
+                "isTaken": false
+            }
+        ]
+    },
+    {
+        "label": "D",
+        "type": "seats",
+        "seats": [
+            {
+                "index": "D8",
+                "type": "regular",
+                "isUnavailable": true,
+                "isTaken": false
+            },
+            {
+                "index": "D9",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D10",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D11",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "D12",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D13",
+                "type": "exit-premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D14",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D15",
+                "type": "exit-premium",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "D16",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "D17",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "D18",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "D19",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D20",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D21",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D22",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "D23",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D24",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D25",
+                "type": "exit-extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D26",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "D27",
+                "type": "exit-extra",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "D28",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "D29",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D30",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D31",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "D32",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "D33",
+                "type": "exit",
+                "isUnavailable": true,
+                "isTaken": false
+            }
+        ]
+    },
+    {
+        "label": "",
+        "type": "labels",
+        "seats": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33
+        ]
+    },
+    {
+        "label": "C",
+        "type": "seats",
+        "seats": [
+            {
+                "index": "C8",
+                "type": "regular",
+                "isUnavailable": true,
+                "isTaken": false
+            },
+            {
+                "index": "C9",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C10",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C11",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "C12",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C13",
+                "type": "exit-premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C14",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C15",
+                "type": "exit-premium",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "C16",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "C17",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "C18",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "C19",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C20",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C21",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C22",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C23",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C24",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C25",
+                "type": "exit-extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C26",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C27",
+                "type": "exit-extra",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "C28",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C29",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C30",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C31",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C32",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "C33",
+                "type": "exit",
+                "isUnavailable": true,
+                "isTaken": false
+            }
+        ]
+    },
+    {
+        "label": "B",
+        "type": "seats",
+        "seats": [
+            {
+                "index": "B8",
+                "type": "regular",
+                "isUnavailable": true,
+                "isTaken": false
+            },
+            {
+                "index": "B9",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B10",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B11",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "B12",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B13",
+                "type": "exit-premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B14",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B15",
+                "type": "exit-premium",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "B16",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "B17",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "B18",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "B19",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B20",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B21",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B22",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "B23",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B24",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B25",
+                "type": "exit-extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B26",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "B27",
+                "type": "exit-extra",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "B28",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "B29",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B30",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B31",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "B32",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "B33",
+                "type": "exit",
+                "isUnavailable": true,
+                "isTaken": false
+            }
+        ]
+    },
+    {
+        "label": "A",
+        "type": "seats",
+        "seats": [
+            {
+                "index": "A8",
+                "type": "regular",
+                "isUnavailable": true,
+                "isTaken": false
+            },
+            {
+                "index": "A9",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A10",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A11",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "A12",
+                "type": "premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A13",
+                "type": "exit-premium",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A14",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A15",
+                "type": "exit-premium",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "A16",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "A17",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "A18",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "A19",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A20",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A21",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A22",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "A23",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A24",
+                "type": "regular",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A25",
+                "type": "exit-extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A26",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "A27",
+                "type": "exit-extra",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "A28",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "A29",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A30",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A31",
+                "type": "extra",
+                "isUnavailable": false,
+                "isTaken": false
+            },
+            {
+                "index": "A32",
+                "type": "exit",
+                "isUnavailable": false,
+                "isTaken": true
+            },
+            {
+                "index": "A33",
+                "type": "exit",
+                "isUnavailable": true,
+                "isTaken": false
+            }
+        ]
+    }
+]

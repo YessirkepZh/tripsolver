@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&amp;display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="/grid.8a8e13d5.css">
+    <link rel="stylesheet" href="/src.9d1287e6.css">
+  </head>
+  <body>
+    <div class="ts-page">
+      <header class="ts-page__header ts-header">
+        <button class="ts-burger-menu js--toggle-menu" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z" fill="#30333C"></path>
+</svg>
+
+        </button><a class="ts-logo" href="/"><img class="ts-logo__media" src="/logo.e9a9c890.png" alt="logo" width="136"></a>
+        <nav class="ts-menu">
+          <ul class="ts-menu__list">
+            <li class="ts-menu__item"><a class="ts-menu__link" href="">Поиск</a></li>
+            <li class="ts-menu__item"><a class="ts-menu__link" href="">Управление поездками</a></li>
+            <li class="ts-menu__item ts-menu__item--has-menu"><a class="ts-menu__link" href="">Дополнительно</a>
+              <div class="ts-submenu">
+                <div class="ts-submenu__content">
+                  <div class="container">
+                    <div class="row row-cols-3">
+                      <div class="col">
+                        <div class="ts-submenu__title">Настройки туроператора</div>
+                        <ul class="ts-submenu__list">
+                          <li class="ts-submenu__item"><a class="ts-submenu__link" href="">Мои путешественники</a></li>
+                          <li class="ts-submenu__item"><a class="ts-submenu__link" href="">Мои организаторы</a></li>
+                        </ul>
+                        <div class="ts-submenu__title">Настройки туроператора</div>
+                        <ul class="ts-submenu__list">
+                          <li class="ts-submenu__item"><a class="ts-submenu__link" href="">Мои путешественники</a></li>
+                          <li class="ts-submenu__item"><a class="ts-submenu__link" href="">Мои организаторы</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="ts-menu__item ts-menu__item--has-menu"><a class="ts-menu__link" href="">Помощь</a></li>
+          </ul>
+        </nav>
+        <div class="ts-header__last-block">
+          <div class="ts-toolbox has--border">
+            <div class="ts-lang">
+              <button class="ts-button ts-lang__button" type="button" data-toggle="dropdown"><img src="/ru.8765a750.png" alt="ru"></button>
+              <div class="dropdown-menu dropdown-menu-right ts-lang__dropdown"><a class="dropdown-item ts-lang__item" href="#"><img src="/ru.8765a750.png" alt="ru"><span>Русский</span></a><a class="dropdown-item ts-lang__item" href="#"><img src="/kk.48556d09.png" alt="ru"><span>Қазақша</span></a><a class="dropdown-item ts-lang__item" href="#"><img src="/en.d52201ea.png" alt="ru"><span>English</span></a></div>
+            </div>
+            <div class="ts-notification-center"><img src="/notification-on.84bd140d.svg" alt=""></div>
+          </div>
+          <div class="ts-auth">
+            <div class="ts-auth__icon"><img src="/profile.92ac9b0c.svg" alt=""></div>
+            <div class="ts-auth__text">Профиль</div>
+          </div>
+        </div>
+      </header>
+      <section class="ts-promo ts-promo--light">
+        <div class="container">
+          <div class="row">
+            <div class="ts-promo__infoblock">
+              <form class="ts-chooser col-md-12" action="/">
+                <div class="ts-chooser__input ts-chooser__input--airport">
+                  <input class="ts-input" type="text" data-toggle="dropdown">
+                  <label class="ts-label">Откуда</label>
+                  <div class="ts-input-airport">TSE</div>
+                  <div class="dropdown-menu ts-dropdown-menu">
+                    <div class="ts-dropdown-menu__wrap">
+                      <div class="ts-dropdown-menu__item">
+                        <div class="ts-dropdown-menu__label"><span>Нур-Султан</span><span class="--gray">Казахстан</span></div>
+                        <div class="ts-dropdown-menu__airport">TSE</div>
+                      </div>
+                      <div class="ts-dropdown-menu__item">
+                        <div class="ts-dropdown-menu__label"><span>Астана</span><span class="--gray">Казахстан</span></div>
+                        <div class="ts-dropdown-menu__airport">TSE</div>
+                      </div>
+                      <div class="ts-dropdown-menu__item">
+                        <div class="ts-dropdown-menu__label"><span>Целиноград</span><span class="--gray">Казахстан</span></div>
+                        <div class="ts-dropdown-menu__airport">TSE</div>
+                      </div>
+                      <div class="ts-dropdown-menu__item">
+                        <div class="ts-dropdown-menu__label"><span>Акмола</span><span class="--gray">Казахстан</span></div>
+                        <div class="ts-dropdown-menu__airport">TSE</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-chooser__input ts-chooser__input--airport">
+                  <input class="ts-input" type="text" data-toggle="dropdown">
+                  <label class="ts-label">Куда</label>
+                  <div class="dropdown-menu ts-dropdown-menu">
+                    <div class="ts-dropdown-menu__wrap">
+                      <div class="ts-dropdown-menu__item">
+                        <div class="ts-dropdown-menu__label"><span>Нур-Султан</span><span class="--gray">Казахстан</span></div>
+                        <div class="ts-dropdown-menu__airport">TSE</div>
+                      </div>
+                      <div class="ts-dropdown-menu__item">
+                        <div class="ts-dropdown-menu__label"><span>Астана</span><span class="--gray">Казахстан</span></div>
+                        <div class="ts-dropdown-menu__airport">TSE</div>
+                      </div>
+                      <div class="ts-dropdown-menu__item">
+                        <div class="ts-dropdown-menu__label"><span>Целиноград</span><span class="--gray">Казахстан</span></div>
+                        <div class="ts-dropdown-menu__airport">TSE</div>
+                      </div>
+                      <div class="ts-dropdown-menu__item">
+                        <div class="ts-dropdown-menu__label"><span>Акмола</span><span class="--gray">Казахстан</span></div>
+                        <div class="ts-dropdown-menu__airport">TSE</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-chooser__input ts-chooser__input--date">
+                  <input class="ts-input js--dates-from" type="text" placeholder="Дата вылета"><img class="ts-icon" src="/date.44baba2d.svg" alt="">
+                </div>
+                <div class="ts-chooser__input ts-chooser__input--date">
+                  <input class="ts-input js--dates-to" type="text" placeholder="Дата прилета"><img class="ts-icon" src="/date.44baba2d.svg" alt="">
+                </div>
+                <div class="ts-chooser__input ts-chooser__input--passenger">
+                  <div class="ts-select-passengers is--select-passengers">
+                    <button class="ts-select-passengers__field" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="ts-select-passengers__label">1 пассажир</div>
+                      <div class="ts-select-passengers__label ts-select-passengers__label--gray">Эконом</div>
+                    </button>
+                    <div class="ts-passengers-dropdown dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <div class="ts-passengers-dropdown__box">
+                        <div class="ts-passengers-dropdown__title">
+                          <div class="ts-passengers-dropdown__label">Взрослые</div>
+                          <div class="ts-passengers-dropdown__label ts-passengers-dropdown__label--gray">Старше 12 лет</div>
+                        </div>
+                        <div class="ts-passengers-dropdown__counter">
+                          <div class="ts-counter">
+                            <button class="ts-counter__decrement" type="button"></button>
+                            <div class="ts-counter__value">1</div>
+                            <button class="ts-counter__increment" type="button"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-passengers-dropdown__box">
+                        <div class="ts-passengers-dropdown__title">
+                          <div class="ts-passengers-dropdown__label">Дети</div>
+                          <div class="ts-passengers-dropdown__label ts-passengers-dropdown__label--gray">От 2 до 12 лет</div>
+                        </div>
+                        <div class="ts-passengers-dropdown__counter">
+                          <div class="ts-counter">
+                            <button class="ts-counter__decrement" type="button"></button>
+                            <div class="ts-counter__value">9</div>
+                            <button class="ts-counter__increment" type="button"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-passengers-dropdown__box">
+                        <div class="ts-passengers-dropdown__title">
+                          <div class="ts-passengers-dropdown__label">Младенцы</div>
+                          <div class="ts-passengers-dropdown__label ts-passengers-dropdown__label--gray">До 2 лет, без места</div>
+                        </div>
+                        <div class="ts-passengers-dropdown__counter">
+                          <div class="ts-counter">
+                            <button class="ts-counter__decrement" type="button"></button>
+                            <div class="ts-counter__value ts-counter__value--gray">0</div>
+                            <button class="ts-counter__increment" type="button"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-passengers-dropdown__list">
+                        <label class="ts-radiobutton">
+                          <input class="ts-radiobutton__input" type="radio" name="fly-type"><span class="ts-radiobutton__text">Эконом</span>
+                        </label>
+                        <label class="ts-radiobutton">
+                          <input class="ts-radiobutton__input" type="radio" name="fly-type"><span class="ts-radiobutton__text">Комфорт</span>
+                        </label>
+                        <label class="ts-radiobutton">
+                          <input class="ts-radiobutton__input" type="radio" name="fly-type"><span class="ts-radiobutton__text">Бизнес</span>
+                        </label>
+                        <label class="ts-radiobutton">
+                          <input class="ts-radiobutton__input" type="radio" name="fly-type"><span class="ts-radiobutton__text">Первый класс</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input class="ts-button ts-button--primary" type="submit" value="Найти">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ts-section ts-section--gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <aside class="ts-sidebar">
+                <div class="ts-sidebar__box js-box">
+                  <h3 class="ts-sidebar__title js-box-toggle">Сортировать по</h3>
+                  <div class="ts-sidebar__box-block js-box-content">
+                    <div class="dropdown" id="sortDropdown">
+                      <button class="dropdown-toggle" type="button" data-toggle="dropdown">По цене</button>
+                      <div class="dropdown-menu"><a class="dropdown-item" href="#">По цене </a><a class="dropdown-item" href="#">По дате </a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-sidebar__box js-box">
+                  <h3 class="ts-sidebar__title js-box-toggle">Цена</h3>
+                  <div class="ts-sidebar__box-block js-box-content">
+                    <div class="ts-slider">
+                      <div class="ts-slider__header">
+                        <div class="ts-slider__step ts-slider__step--from">18 780 ₸</div>
+                        <div class="ts-slider__step ts-slider__step--to">48 320 ₸</div>
+                      </div>
+                      <div class="js-slider" id="priceSlider" data-from="18780" data-to="48320"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-sidebar__box js-box">
+                  <h3 class="ts-sidebar__title js-box-toggle">Пересадки</h3>
+                  <div class="ts-sidebar__box-block js-box-content">
+                    <div class="ts-checkbox-wrap">
+                      <label class="ts-checkbox">
+                        <input type="checkbox">
+                        <div class="ts-checkbox__pseudo"></div><span class="ts-checkbox__text">Без пересадок</span>
+                      </label>
+                    </div>
+                    <div class="ts-checkbox-wrap">
+                      <label class="ts-checkbox">
+                        <input type="checkbox">
+                        <div class="ts-checkbox__pseudo"></div><span class="ts-checkbox__text">1 пересадка</span>
+                      </label>
+                    </div>
+                    <div class="ts-checkbox-wrap">
+                      <label class="ts-checkbox">
+                        <input type="checkbox">
+                        <div class="ts-checkbox__pseudo"></div><span class="ts-checkbox__text">2 пересадки</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-sidebar__box js-box">
+                  <h3 class="ts-sidebar__title js-box-toggle">Время в пути</h3>
+                  <div class="ts-sidebar__box-block js-box-content"> 
+                    <div class="ts-slider">
+                      <div class="ts-slider__header">
+                        <div class="ts-slider__step ts-slider__step--from">1ч 30м</div>
+                        <div class="ts-slider__step ts-slider__step--to">4ч 22м</div>
+                      </div>
+                      <div class="js-slider" id="timeSlider" data-from="90" data-to="262"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-sidebar__box js-box">
+                  <h3 class="ts-sidebar__title js-box-toggle">Авиакомпании</h3>
+                  <div class="ts-sidebar__box-block js-box-content">
+                    <div class="ts-checkbox-wrap">
+                      <label class="ts-checkbox">
+                        <input type="checkbox">
+                        <div class="ts-checkbox__pseudo"></div><span class="ts-checkbox__text">Все</span>
+                      </label>
+                    </div>
+                    <div class="ts-checkbox-wrap">
+                      <label class="ts-checkbox">
+                        <input type="checkbox">
+                        <div class="ts-checkbox__pseudo"></div><span class="ts-checkbox__text">Air Astana</span>
+                      </label>
+                    </div>
+                    <div class="ts-checkbox-wrap">
+                      <label class="ts-checkbox">
+                        <input type="checkbox">
+                        <div class="ts-checkbox__pseudo"></div><span class="ts-checkbox__text">Fly Arystan</span>
+                      </label>
+                    </div>
+                    <div class="ts-checkbox-wrap">
+                      <label class="ts-checkbox">
+                        <input type="checkbox">
+                        <div class="ts-checkbox__pseudo"></div><span class="ts-checkbox__text">Qazaq Air</span>
+                      </label>
+                    </div>
+                    <div class="ts-checkbox-wrap">
+                      <label class="ts-checkbox">
+                        <input type="checkbox">
+                        <div class="ts-checkbox__pseudo"></div><span class="ts-checkbox__text">SCAT</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-sidebar__box js-box is--closed">
+                  <h3 class="ts-sidebar__title js-box-toggle">Багаж</h3>
+                  <div class="ts-sidebar__box-block js-box-content collapse"> 
+                    <div class="ts-slider">
+                      <div class="ts-slider__header">
+                        <div class="ts-slider__step ts-slider__step--from">0 кг.</div>
+                        <div class="ts-slider__step ts-slider__step--to">20 кг.</div>
+                      </div>
+                      <div class="js-slider" id="baggageSlider" data-from="0" data-to="20"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-sidebar__box js-box is--closed">
+                  <h3 class="ts-sidebar__title js-box-toggle">Аэропорты</h3>
+                  <div class="ts-sidebar__box-block js-box-content collapse">
+                    <div class="ts-checkbox-wrap">
+                      <label class="ts-checkbox">
+                        <input type="checkbox">
+                        <div class="ts-checkbox__pseudo"></div><span class="ts-checkbox__text">Все</span>
+                      </label>
+                    </div>
+                    <div class="ts-checkbox-wrap">
+                      <label class="ts-checkbox">
+                        <input type="checkbox">
+                        <div class="ts-checkbox__pseudo"></div><span class="ts-checkbox__text">NQZ</span>
+                      </label>
+                    </div>
+                    <div class="ts-checkbox-wrap">
+                      <label class="ts-checkbox">
+                        <input type="checkbox">
+                        <div class="ts-checkbox__pseudo"></div><span class="ts-checkbox__text">ALA</span>
+                      </label>
+                    </div>
+                    <div class="ts-checkbox-wrap">
+                      <label class="ts-checkbox">
+                        <input type="checkbox">
+                        <div class="ts-checkbox__pseudo"></div><span class="ts-checkbox__text">TSE</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-sidebar__box js-box is--closed">
+                  <h3 class="ts-sidebar__title js-box-toggle">Время пересадки</h3>
+                  <div class="ts-sidebar__box-block js-box-content collapse">
+                    <div class="ts-slider">
+                      <div class="ts-slider__header">
+                        <div class="ts-slider__step ts-slider__step--from">10м</div>
+                        <div class="ts-slider__step ts-slider__step--to">60м</div>
+                      </div>
+                      <div class="js-slider" id="transferSlider" data-from="10" data-to="60"></div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            </div>
+            <div class="col-md-9">
+              <div class="ts-result">
+                <div class="ts-result__body" data-toggle="collapse" href="#result0">
+                  <div class="ts-result__content">
+                    <div class="d-lg-none">
+                      <div class="ts-result__description">3 тарифа</div>
+                      <div class="ts-result__price">от 18 780 ₸</div>
+                    </div>
+                    <div class="ts-result__info">
+                      <div class="ts-result__routes">
+                        <div class="ts-result__route">
+                          <div class="ts-result__direction ts-result__direction--from">
+                            <div class="ts-result__time">09:25</div>
+                            <div class="ts-result__description d-lg-none">NQZ</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Нурсултан, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--between"> 
+                            <div class="ts-result__title d-lg-none">-</div>
+                            <div class="ts-result__progress-wrap d-none d-lg-flex">
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                              <div class="ts-result__progress"> 
+                                <div class="ts-result__description">В пути: 1 час 30 мин.</div>
+                                <div class="ts-result__progress-route">
+                                  <div class="ts-result__progress-bar"></div>
+                                  <div class="ts-result__transfer"><img class="ts-result__transfer-icon" src="/transfer.b63a262f.svg">
+                                    <div class="ts-result__label">OVB</div>
+                                  </div>
+                                  <div class="ts-result__progress-bar"></div>
+                                </div>
+                                <div class="ts-result__description">1 пересадка</div>
+                              </div>
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--to">
+                            <div class="ts-result__time">10:55</div>
+                            <div class="ts-result__description d-lg-none">ALA</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Алматы, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__duration d-lg-none">
+                            <div class="ts-result__subtitle">В пути</div>
+                            <div class="ts-result__description">1ч 30м</div>
+                          </div>
+                        </div>
+                        <div class="ts-result__route">
+                          <div class="ts-result__direction ts-result__direction--from">
+                            <div class="ts-result__time">09:25</div>
+                            <div class="ts-result__description d-lg-none">NQZ</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Нурсултан, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--between"> 
+                            <div class="ts-result__title d-lg-none">-</div>
+                            <div class="ts-result__progress-wrap d-none d-lg-flex">
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                              <div class="ts-result__progress"> 
+                                <div class="ts-result__description">В пути: 1 час 30 мин.</div>
+                                <div class="ts-result__progress-route">
+                                  <div class="ts-result__progress-bar"></div>
+                                </div>
+                                <div class="ts-result__description">без пересадок</div>
+                              </div>
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--to">
+                            <div class="ts-result__time">10:55</div>
+                            <div class="ts-result__description d-lg-none">ALA</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Алматы, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__duration d-lg-none">
+                            <div class="ts-result__subtitle">В пути</div>
+                            <div class="ts-result__description">1ч 30м</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ts-result__company"><img class="ts-result__company-img" src="/air-astana.ae62edc5.png">
+                    <div class="d-lg-none">
+                      <div class="ts-result__subtitle">1 пересадка</div>
+                      <div class="ts-result__description">Новосибирск</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-result__details-collapse collapse" id="result0">
+                  <div class="ts-result__details-wrap">
+                    <div class="ts-result__subtitle">Туда</div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__description ts-result__details-transfer">Пересадка: 4ч 20м</div>
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ts-result__details-wrap">
+                    <div class="ts-result__subtitle">Обратно</div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-result__footer d-none d-lg-flex">
+                  <div class="ts-result__service" data-toggle="tooltip" title="Класс"><img class="ts-result__service-icon" src="/chair.5bd7ec32.svg"><span class="ts-result__service-label">Эконом лайт</span></div>
+                  <div class="ts-result__service" data-toggle="tooltip" title="Багаж"><img class="ts-result__service-icon" src="/baggage.624562c4.svg"><span class="ts-result__service-label">15 кг</span></div>
+                  <div class="ts-result__price-wrap">
+                    <div class="ts-result__description">3 тарифа</div><a class="ts-result__price" href="#">от 18 780 ₸</a>
+                  </div>
+                  <button class="ts-button ts-button--primary ts-result__buy" data-toggle="modal" data-target="#tariff-modal">Купить</button>
+                </div>
+              </div>
+              <div class="ts-result">
+                <div class="ts-result__body" data-toggle="collapse" href="#result1">
+                  <div class="ts-result__content">
+                    <div class="d-lg-none">
+                      <div class="ts-result__description">2 тарифа</div>
+                      <div class="ts-result__price">от 18 780 ₸</div>
+                    </div>
+                    <div class="ts-result__info">
+                      <div class="ts-result__routes">
+                        <div class="ts-result__route">
+                          <div class="ts-result__direction ts-result__direction--from">
+                            <div class="ts-result__time">09:25</div>
+                            <div class="ts-result__description d-lg-none">NQZ</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Нурсултан, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--between"> 
+                            <div class="ts-result__title d-lg-none">-</div>
+                            <div class="ts-result__progress-wrap d-none d-lg-flex">
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                              <div class="ts-result__progress"> 
+                                <div class="ts-result__description">В пути: 1 час 30 мин.</div>
+                                <div class="ts-result__progress-route">
+                                  <div class="ts-result__progress-bar"></div>
+                                  <div class="ts-result__transfer"><img class="ts-result__transfer-icon" src="/transfer.b63a262f.svg">
+                                    <div class="ts-result__label">OVB</div>
+                                  </div>
+                                  <div class="ts-result__progress-bar"></div>
+                                </div>
+                                <div class="ts-result__description">2 пересадки</div>
+                              </div>
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--to">
+                            <div class="ts-result__time">10:55</div>
+                            <div class="ts-result__description d-lg-none">ALA</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Алматы, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__duration d-lg-none">
+                            <div class="ts-result__subtitle">В пути</div>
+                            <div class="ts-result__description">1ч 30м</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ts-result__company"><img class="ts-result__company-img" src="/fly-arystan.ca9c6f4e.png">
+                    <div class="d-lg-none">
+                      <div class="ts-result__subtitle">2 пересадки</div>
+                      <div class="ts-result__description">(VNO) (KGR)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-result__details-collapse collapse" id="result1">
+                  <div class="ts-result__details-wrap">
+                    <div class="ts-result__subtitle">Туда</div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__description ts-result__details-transfer">Пересадка: 4ч 20м</div>
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__description ts-result__details-transfer">Пересадка: 4ч 20м</div>
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-result__footer d-none d-lg-flex">
+                  <div class="ts-result__service" data-toggle="tooltip" title="Класс"><img class="ts-result__service-icon" src="/chair.5bd7ec32.svg"><span class="ts-result__service-label">Эконом лайт</span></div>
+                  <div class="ts-result__service" data-toggle="tooltip" title="Багаж"><img class="ts-result__service-icon" src="/baggage.624562c4.svg"><span class="ts-result__service-label">15 кг</span></div>
+                  <div class="ts-result__price-wrap">
+                    <div class="ts-result__description">2 тарифа</div><a class="ts-result__price" href="#">от 18 780 ₸</a>
+                  </div>
+                  <button class="ts-button ts-button--primary ts-result__buy" data-toggle="modal" data-target="#tariff-modal">Купить</button>
+                </div>
+              </div>
+              <div class="ts-result">
+                <div class="ts-result__body" data-toggle="collapse" href="#result2">
+                  <div class="ts-result__content">
+                    <div class="d-lg-none">
+                      <div class="ts-result__description">3 тарифа</div>
+                      <div class="ts-result__price">от 18 780 ₸</div>
+                    </div>
+                    <div class="ts-result__info">
+                      <div class="ts-result__routes">
+                        <div class="ts-result__route">
+                          <div class="ts-result__direction ts-result__direction--from">
+                            <div class="ts-result__time">09:25</div>
+                            <div class="ts-result__description d-lg-none">NQZ</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Нурсултан, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--between"> 
+                            <div class="ts-result__title d-lg-none">-</div>
+                            <div class="ts-result__progress-wrap d-none d-lg-flex">
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                              <div class="ts-result__progress"> 
+                                <div class="ts-result__description">В пути: 1 час 30 мин.</div>
+                                <div class="ts-result__progress-route">
+                                  <div class="ts-result__progress-bar"></div>
+                                  <div class="ts-result__transfer"><img class="ts-result__transfer-icon" src="/transfer.b63a262f.svg">
+                                    <div class="ts-result__label">OVB</div>
+                                  </div>
+                                  <div class="ts-result__progress-bar"></div>
+                                </div>
+                                <div class="ts-result__description">1 пересадка</div>
+                              </div>
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--to">
+                            <div class="ts-result__time">10:55</div>
+                            <div class="ts-result__description d-lg-none">ALA</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Алматы, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__duration d-lg-none">
+                            <div class="ts-result__subtitle">В пути</div>
+                            <div class="ts-result__description">1ч 30м</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ts-result__company"><img class="ts-result__company-img" src="/qazaq-air.25891e06.png">
+                    <div class="d-lg-none">
+                      <div class="ts-result__subtitle">1 пересадка</div>
+                      <div class="ts-result__description">Новосибирск</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-result__details-collapse collapse" id="result2">
+                  <div class="ts-result__details-wrap">
+                    <div class="ts-result__subtitle">Туда</div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__description ts-result__details-transfer">Пересадка: 4ч 20м</div>
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-result__footer d-none d-lg-flex">
+                  <div class="ts-result__service" data-toggle="tooltip" title="Класс"><img class="ts-result__service-icon" src="/chair.5bd7ec32.svg"><span class="ts-result__service-label">Эконом лайт</span></div>
+                  <div class="ts-result__service" data-toggle="tooltip" title="Багаж"><img class="ts-result__service-icon" src="/baggage.624562c4.svg"><span class="ts-result__service-label">15 кг</span></div>
+                  <div class="ts-result__price-wrap">
+                    <div class="ts-result__description">3 тарифа</div><a class="ts-result__price" href="#">от 18 780 ₸</a>
+                  </div>
+                  <button class="ts-button ts-button--primary ts-result__buy" data-toggle="modal" data-target="#tariff-modal">Купить</button>
+                </div>
+              </div>
+              <div class="ts-result">
+                <div class="ts-result__body" data-toggle="collapse" href="#result3">
+                  <div class="ts-result__content">
+                    <div class="d-lg-none">
+                      <div class="ts-result__description">3 тарифа</div>
+                      <div class="ts-result__price">от 18 780 ₸</div>
+                    </div>
+                    <div class="ts-result__info">
+                      <div class="ts-result__routes">
+                        <div class="ts-result__route">
+                          <div class="ts-result__direction ts-result__direction--from">
+                            <div class="ts-result__time">09:25</div>
+                            <div class="ts-result__description d-lg-none">NQZ</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Нурсултан, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--between"> 
+                            <div class="ts-result__title d-lg-none">-</div>
+                            <div class="ts-result__progress-wrap d-none d-lg-flex">
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                              <div class="ts-result__progress"> 
+                                <div class="ts-result__description">В пути: 1 час 30 мин.</div>
+                                <div class="ts-result__progress-route">
+                                  <div class="ts-result__progress-bar"></div>
+                                </div>
+                                <div class="ts-result__description">без пересадок</div>
+                              </div>
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--to">
+                            <div class="ts-result__time">10:55</div>
+                            <div class="ts-result__description d-lg-none">ALA</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Алматы, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__duration d-lg-none">
+                            <div class="ts-result__subtitle">В пути</div>
+                            <div class="ts-result__description">1ч 30м</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ts-result__company"><img class="ts-result__company-img" src="/scat.f0d60693.png">
+                    <div class="d-lg-none">
+                      <div class="ts-result__subtitle">без пересадок</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-result__details-collapse collapse" id="result3">
+                  <div class="ts-result__details-wrap">
+                    <div class="ts-result__subtitle">Туда</div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-result__footer d-none d-lg-flex">
+                  <div class="ts-result__service" data-toggle="tooltip" title="Класс"><img class="ts-result__service-icon" src="/chair.5bd7ec32.svg"><span class="ts-result__service-label">Эконом лайт</span></div>
+                  <div class="ts-result__service" data-toggle="tooltip" title="Багаж"><img class="ts-result__service-icon" src="/baggage.624562c4.svg"><span class="ts-result__service-label">15 кг</span></div>
+                  <div class="ts-result__price-wrap">
+                    <div class="ts-result__description">3 тарифа</div><a class="ts-result__price" href="#">от 18 780 ₸</a>
+                  </div>
+                  <button class="ts-button ts-button--primary ts-result__buy" data-toggle="modal" data-target="#tariff-modal">Купить</button>
+                </div>
+              </div>
+              <div class="ts-result">
+                <div class="ts-result__body" data-toggle="collapse" href="#result4">
+                  <div class="ts-result__content">
+                    <div class="d-lg-none">
+                      <div class="ts-result__price">18 780 ₸</div>
+                    </div>
+                    <div class="ts-result__info">
+                      <div class="ts-result__routes">
+                        <div class="ts-result__route">
+                          <div class="ts-result__direction ts-result__direction--from">
+                            <div class="ts-result__time">09:25</div>
+                            <div class="ts-result__description d-lg-none">NQZ</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Нурсултан, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--between"> 
+                            <div class="ts-result__title d-lg-none">-</div>
+                            <div class="ts-result__progress-wrap d-none d-lg-flex">
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                              <div class="ts-result__progress"> 
+                                <div class="ts-result__description">В пути: 1 час 30 мин.</div>
+                                <div class="ts-result__progress-route">
+                                  <div class="ts-result__progress-bar"></div>
+                                </div>
+                                <div class="ts-result__description">без пересадок</div>
+                              </div>
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--to">
+                            <div class="ts-result__time">10:55</div>
+                            <div class="ts-result__description d-lg-none">ALA</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Алматы, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__duration d-lg-none">
+                            <div class="ts-result__subtitle">В пути</div>
+                            <div class="ts-result__description">1ч 30м</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ts-result__company"><img class="ts-result__company-img" src="/air-astana.ae62edc5.png">
+                    <div class="d-lg-none">
+                      <div class="ts-result__subtitle">без пересадок</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-result__details-collapse collapse" id="result4">
+                  <div class="ts-result__details-wrap">
+                    <div class="ts-result__subtitle">Туда</div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-result__footer d-none d-lg-flex">
+                  <div class="ts-result__service" data-toggle="tooltip" title="Класс"><img class="ts-result__service-icon" src="/chair.5bd7ec32.svg"><span class="ts-result__service-label">Эконом лайт</span></div>
+                  <div class="ts-result__service" data-toggle="tooltip" title="Багаж"><img class="ts-result__service-icon" src="/baggage.624562c4.svg"><span class="ts-result__service-label">15 кг</span></div>
+                  <div class="ts-result__price-wrap"><a class="ts-result__price" href="#">18 780 ₸</a>
+                  </div>
+                  <button class="ts-button ts-button--primary ts-result__buy" data-toggle="modal" data-target="#tariff-modal">Купить</button>
+                </div>
+              </div>
+              <div class="ts-result">
+                <div class="ts-result__body" data-toggle="collapse" href="#result5">
+                  <div class="ts-result__content">
+                    <div class="d-lg-none">
+                      <div class="ts-result__price">18 780 ₸</div>
+                    </div>
+                    <div class="ts-result__info">
+                      <div class="ts-result__routes">
+                        <div class="ts-result__route">
+                          <div class="ts-result__direction ts-result__direction--from">
+                            <div class="ts-result__time">09:25</div>
+                            <div class="ts-result__description d-lg-none">NQZ</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Нурсултан, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--between"> 
+                            <div class="ts-result__title d-lg-none">-</div>
+                            <div class="ts-result__progress-wrap d-none d-lg-flex">
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                              <div class="ts-result__progress"> 
+                                <div class="ts-result__description">В пути: 1 час 30 мин.</div>
+                                <div class="ts-result__progress-route">
+                                  <div class="ts-result__progress-bar"></div>
+                                  <div class="ts-result__transfer"><img class="ts-result__transfer-icon" src="/transfer.b63a262f.svg">
+                                    <div class="ts-result__label">OVB</div>
+                                  </div>
+                                  <div class="ts-result__progress-bar"></div>
+                                </div>
+                                <div class="ts-result__description">1 пересадка</div>
+                              </div>
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--to">
+                            <div class="ts-result__time">10:55</div>
+                            <div class="ts-result__description d-lg-none">ALA</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Алматы, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__duration d-lg-none">
+                            <div class="ts-result__subtitle">В пути</div>
+                            <div class="ts-result__description">1ч 30м</div>
+                          </div>
+                        </div>
+                        <div class="ts-result__route">
+                          <div class="ts-result__direction ts-result__direction--from">
+                            <div class="ts-result__time">09:25</div>
+                            <div class="ts-result__description d-lg-none">NQZ</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Нурсултан, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--between"> 
+                            <div class="ts-result__title d-lg-none">-</div>
+                            <div class="ts-result__progress-wrap d-none d-lg-flex">
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                              <div class="ts-result__progress"> 
+                                <div class="ts-result__description">В пути: 1 час 30 мин.</div>
+                                <div class="ts-result__progress-route">
+                                  <div class="ts-result__progress-bar"></div>
+                                  <div class="ts-result__transfer"><img class="ts-result__transfer-icon" src="/transfer.b63a262f.svg">
+                                    <div class="ts-result__label">OVB</div>
+                                  </div>
+                                  <div class="ts-result__progress-bar"></div>
+                                </div>
+                                <div class="ts-result__description">2 пересадки</div>
+                              </div>
+                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg">
+                                <div class="ts-result__label">NQZ</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="ts-result__direction ts-result__direction--to">
+                            <div class="ts-result__time">10:55</div>
+                            <div class="ts-result__description d-lg-none">ALA</div>
+                            <div class="ts-result__subtitle d-none d-lg-block">Алматы, Казахстан</div>
+                            <div class="ts-result__description d-none d-lg-block">03 июнь 2020</div>
+                          </div>
+                          <div class="ts-result__duration d-lg-none">
+                            <div class="ts-result__subtitle">В пути</div>
+                            <div class="ts-result__description">1ч 30м</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ts-result__company"><img class="ts-result__company-img" src="/fly-arystan.ca9c6f4e.png">
+                    <div class="d-lg-none">
+                      <div class="ts-result__subtitle">3 пересадки</div>
+                      <div class="ts-result__description">(VNO) (KGR)</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-result__details-collapse collapse" id="result5">
+                  <div class="ts-result__details-wrap">
+                    <div class="ts-result__subtitle">Туда</div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__description ts-result__details-transfer">Пересадка: 4ч 20м</div>
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ts-result__details-wrap">
+                    <div class="ts-result__subtitle">Обратно</div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__description ts-result__details-transfer">Пересадка: 4ч 20м</div>
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__description ts-result__details-transfer">Пересадка: 4ч 20м</div>
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                    <div class="ts-result__details">
+                      <div class="ts-result__details-route">
+                        <div class="ts-result__details-top">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">09:25</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
+                                <div class="ts-result__description">Нур-Султан</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="ts-result__details-bottom">
+                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          <div class="ts-result__details-more">
+                            <div class="ts-result__details-row">
+                              <div class="ts-result__details-time">
+                                <div class="ts-result__time ts-result__time--small">10:55</div>
+                                <div class="ts-result__description">12 июн.</div>
+                              </div>
+                              <div class="ts-result__details-direction">
+                                <div class="ts-result__subtitle">Алматы (ALA)</div>
+                                <div class="ts-result__description">Алматы</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ts-result__details-info">
+                        <div class="ts-result__subtitle">Авиакомпания: Air astana</div>
+                        <div class="ts-result__subtitle">Рейс: KC-852</div>
+                        <div class="ts-result__subtitle">В пути: 1 час 30 мин</div><a class="ts-result__subtitle ts-result__subtitle--link" href="#">Условия тарифа</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="ts-result__footer d-none d-lg-flex">
+                  <div class="ts-result__service" data-toggle="tooltip" title="Класс"><img class="ts-result__service-icon" src="/chair.5bd7ec32.svg"><span class="ts-result__service-label">Эконом лайт</span></div>
+                  <div class="ts-result__service" data-toggle="tooltip" title="Багаж"><img class="ts-result__service-icon" src="/baggage.624562c4.svg"><span class="ts-result__service-label">15 кг</span></div>
+                  <div class="ts-result__price-wrap"><a class="ts-result__price" href="#">18 780 ₸</a>
+                  </div>
+                  <button class="ts-button ts-button--primary ts-result__buy" data-toggle="modal" data-target="#tariff-modal">Купить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="modal fade" id="tariff-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog--centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Выберите тариф</h3>
+            <button class="button button--close close" data-dismiss="modal">×</button>
+          </div>
+          <div class="modal-body">
+            <div class="ts-tariff">
+              <div class="ts-tariff__item">
+                <div class="ts-tariff__title">Бюджетный</div>
+                <div class="ts-tariff__sum">10 780 ₸</div>
+                <div class="ts-tariff__description">
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Багаж до 10 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Ручная кладь до 5 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Обмен</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM12 10.7274L9.4548 8.1813L8.1813 9.4548L10.7274 12L8.1813 14.5452L9.4548 15.8187L12 13.2726L14.5452 15.8187L15.8187 14.5452L13.2726 12L15.8187 9.4548L14.5452 8.1813L12 10.7274Z" fill="#EB5757"></path>
+</svg>
+
+                    </div><span>Возврат</span>
+                  </div>
+                </div>
+                <div class="ts-tariff__label">Выбрано</div>
+              </div>
+              <div class="ts-tariff__item ts-tariff__item--active">
+                <div class="ts-tariff__title">Бюджетный</div>
+                <div class="ts-tariff__sum">11 780 ₸</div>
+                <div class="ts-tariff__description">
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Багаж до 10 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Ручная кладь до 5 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Обмен</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM12 10.7274L9.4548 8.1813L8.1813 9.4548L10.7274 12L8.1813 14.5452L9.4548 15.8187L12 13.2726L14.5452 15.8187L15.8187 14.5452L13.2726 12L15.8187 9.4548L14.5452 8.1813L12 10.7274Z" fill="#EB5757"></path>
+</svg>
+
+                    </div><span>Возврат</span>
+                  </div>
+                </div>
+                <div class="ts-tariff__label">Выбрано</div>
+              </div>
+              <div class="ts-tariff__item">
+                <div class="ts-tariff__title">Бюджетный</div>
+                <div class="ts-tariff__sum">12 780 ₸</div>
+                <div class="ts-tariff__description">
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Багаж до 10 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Ручная кладь до 5 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Обмен</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM12 10.7274L9.4548 8.1813L8.1813 9.4548L10.7274 12L8.1813 14.5452L9.4548 15.8187L12 13.2726L14.5452 15.8187L15.8187 14.5452L13.2726 12L15.8187 9.4548L14.5452 8.1813L12 10.7274Z" fill="#EB5757"></path>
+</svg>
+
+                    </div><span>Возврат</span>
+                  </div>
+                </div>
+                <div class="ts-tariff__label">Выбрано</div>
+              </div>
+              <div class="ts-tariff__item">
+                <div class="ts-tariff__title">Бюджетный</div>
+                <div class="ts-tariff__sum">13 780 ₸</div>
+                <div class="ts-tariff__description">
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Багаж до 10 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Ручная кладь до 5 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Обмен</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM12 10.7274L9.4548 8.1813L8.1813 9.4548L10.7274 12L8.1813 14.5452L9.4548 15.8187L12 13.2726L14.5452 15.8187L15.8187 14.5452L13.2726 12L15.8187 9.4548L14.5452 8.1813L12 10.7274Z" fill="#EB5757"></path>
+</svg>
+
+                    </div><span>Возврат</span>
+                  </div>
+                </div>
+                <div class="ts-tariff__label">Выбрано</div>
+              </div>
+              <div class="ts-tariff__item">
+                <div class="ts-tariff__title">Бюджетный</div>
+                <div class="ts-tariff__sum">14 780 ₸</div>
+                <div class="ts-tariff__description">
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Багаж до 10 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Ручная кладь до 5 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Обмен</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM12 10.7274L9.4548 8.1813L8.1813 9.4548L10.7274 12L8.1813 14.5452L9.4548 15.8187L12 13.2726L14.5452 15.8187L15.8187 14.5452L13.2726 12L15.8187 9.4548L14.5452 8.1813L12 10.7274Z" fill="#EB5757"></path>
+</svg>
+
+                    </div><span>Возврат</span>
+                  </div>
+                </div>
+                <div class="ts-tariff__label">Выбрано</div>
+              </div>
+              <div class="ts-tariff__item">
+                <div class="ts-tariff__title">Бюджетный</div>
+                <div class="ts-tariff__sum">15 780 ₸</div>
+                <div class="ts-tariff__description">
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Багаж до 10 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Ручная кладь до 5 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Обмен</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM12 10.7274L9.4548 8.1813L8.1813 9.4548L10.7274 12L8.1813 14.5452L9.4548 15.8187L12 13.2726L14.5452 15.8187L15.8187 14.5452L13.2726 12L15.8187 9.4548L14.5452 8.1813L12 10.7274Z" fill="#EB5757"></path>
+</svg>
+
+                    </div><span>Возврат</span>
+                  </div>
+                </div>
+                <div class="ts-tariff__label">Выбрано</div>
+              </div>
+              <div class="ts-tariff__item">
+                <div class="ts-tariff__title">Бюджетный</div>
+                <div class="ts-tariff__sum">16 780 ₸</div>
+                <div class="ts-tariff__description">
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Багаж до 10 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Ручная кладь до 5 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Обмен</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM12 10.7274L9.4548 8.1813L8.1813 9.4548L10.7274 12L8.1813 14.5452L9.4548 15.8187L12 13.2726L14.5452 15.8187L15.8187 14.5452L13.2726 12L15.8187 9.4548L14.5452 8.1813L12 10.7274Z" fill="#EB5757"></path>
+</svg>
+
+                    </div><span>Возврат</span>
+                  </div>
+                </div>
+                <div class="ts-tariff__label">Выбрано</div>
+              </div>
+              <div class="ts-tariff__item">
+                <div class="ts-tariff__title">Бюджетный</div>
+                <div class="ts-tariff__sum">17 780 ₸</div>
+                <div class="ts-tariff__description">
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Багаж до 10 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Ручная кладь до 5 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Обмен</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM12 10.7274L9.4548 8.1813L8.1813 9.4548L10.7274 12L8.1813 14.5452L9.4548 15.8187L12 13.2726L14.5452 15.8187L15.8187 14.5452L13.2726 12L15.8187 9.4548L14.5452 8.1813L12 10.7274Z" fill="#EB5757"></path>
+</svg>
+
+                    </div><span>Возврат</span>
+                  </div>
+                </div>
+                <div class="ts-tariff__label">Выбрано</div>
+              </div>
+              <div class="ts-tariff__item">
+                <div class="ts-tariff__title">Бюджетный</div>
+                <div class="ts-tariff__sum">18 780 ₸</div>
+                <div class="ts-tariff__description">
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Багаж до 10 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Ручная кладь до 5 кг</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM11.1027 15.6L17.4657 9.2361L16.1931 7.9635L11.1027 13.0548L8.5566 10.5087L7.284 11.7813L11.1027 15.6Z" fill="#0085CC"></path>
+</svg>
+
+                    </div><span>Обмен</span>
+                  </div>
+                  <div class="ts-tariff__value">
+                    <div class="ts-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 21C7.0293 21 3 16.9707 3 12C3 7.0293 7.0293 3 12 3C16.9707 3 21 7.0293 21 12C21 16.9707 16.9707 21 12 21ZM12 10.7274L9.4548 8.1813L8.1813 9.4548L10.7274 12L8.1813 14.5452L9.4548 15.8187L12 13.2726L14.5452 15.8187L15.8187 14.5452L13.2726 12L15.8187 9.4548L14.5452 8.1813L12 10.7274Z" fill="#EB5757"></path>
+</svg>
+
+                    </div><span>Возврат</span>
+                  </div>
+                </div>
+                <div class="ts-tariff__label">Выбрано</div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="ts-button ts-button--primary">Продолжить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ts-mobile-menu">
+      <header class="ts-mobile-menu__header"><a class="ts-logo" href="/"><img class="ts-logo__media" src="/logo.e9a9c890.png" alt="logo" width="136"></a>
+        <button class="ts-mobile-menu__close-btn js--toggle-menu" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9997 10.586L16.9497 5.63599L18.3637 7.04999L13.4137 12L18.3637 16.95L16.9497 18.364L11.9997 13.414L7.04974 18.364L5.63574 16.95L10.5857 12L5.63574 7.04999L7.04974 5.63599L11.9997 10.586Z" fill="#777B87"></path>
+</svg>
+
+        </button>
+      </header>
+      <div class="ts-mobile-menu__list">
+        <div class="ts-sidemenu"><a class="ts-sidemenu__link ts-sidemenu__link--active" href=""><span class="ts-sidemenu__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.031 16.617L22.314 20.899L20.899 22.314L16.617 18.031C15.0237 19.3082 13.042 20.0029 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20.0029 13.042 19.3082 15.0237 18.031 16.617ZM16.025 15.875C17.2941 14.5699 18.0029 12.8204 18 11C18 7.132 14.867 4 11 4C7.132 4 4 7.132 4 11C4 14.867 7.132 18 11 18C12.8204 18.0029 14.5699 17.2941 15.875 16.025L16.025 15.875Z" fill="#0085CC"></path>
+</svg>
+</span><span class="ts-sidemenu__text">Поиск</span></a><a class="ts-sidemenu__link" href=""><span class="ts-sidemenu__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 4.88889C3 4.65314 3.09482 4.42705 3.2636 4.26035C3.43239 4.09365 3.66131 4 3.9 4H20.1C20.3387 4 20.5676 4.09365 20.7364 4.26035C20.9052 4.42705 21 4.65314 21 4.88889V9.77778C20.4033 9.77778 19.831 10.0119 19.409 10.4287C18.9871 10.8454 18.75 11.4106 18.75 12C18.75 12.5894 18.9871 13.1546 19.409 13.5713C19.831 13.9881 20.4033 14.2222 21 14.2222V19.1111C21 19.3469 20.9052 19.573 20.7364 19.7397C20.5676 19.9064 20.3387 20 20.1 20H3.9C3.66131 20 3.43239 19.9064 3.2636 19.7397C3.09482 19.573 3 19.3469 3 19.1111V4.88889ZM8.4765 18.2222C8.56926 17.9618 8.7416 17.7362 8.96971 17.5766C9.19782 17.4171 9.47046 17.3314 9.75 17.3314C10.0295 17.3314 10.3022 17.4171 10.5303 17.5766C10.7584 17.7362 10.9307 17.9618 11.0235 18.2222H19.2V15.584C18.5239 15.2531 17.9549 14.7422 17.557 14.1089C17.1592 13.4757 16.9484 12.7452 16.9484 12C16.9484 11.2548 17.1592 10.5243 17.557 9.89107C17.9549 9.25782 18.5239 8.74693 19.2 8.416V5.77778H11.0235C10.9307 6.03822 10.7584 6.2638 10.5303 6.42337C10.3022 6.58295 10.0295 6.66865 9.75 6.66865C9.47046 6.66865 9.19782 6.58295 8.96971 6.42337C8.7416 6.2638 8.56926 6.03822 8.4765 5.77778H4.8V18.2222H8.4765ZM9.75 11.1111C9.39196 11.1111 9.04858 10.9706 8.79541 10.7206C8.54223 10.4705 8.4 10.1314 8.4 9.77778C8.4 9.42416 8.54223 9.08502 8.79541 8.83497C9.04858 8.58492 9.39196 8.44444 9.75 8.44444C10.108 8.44444 10.4514 8.58492 10.7046 8.83497C10.9578 9.08502 11.1 9.42416 11.1 9.77778C11.1 10.1314 10.9578 10.4705 10.7046 10.7206C10.4514 10.9706 10.108 11.1111 9.75 11.1111ZM9.75 15.5556C9.39196 15.5556 9.04858 15.4151 8.79541 15.165C8.54223 14.915 8.4 14.5758 8.4 14.2222C8.4 13.8686 8.54223 13.5295 8.79541 13.2794C9.04858 13.0294 9.39196 12.8889 9.75 12.8889C10.108 12.8889 10.4514 13.0294 10.7046 13.2794C10.9578 13.5295 11.1 13.8686 11.1 14.2222C11.1 14.5758 10.9578 14.915 10.7046 15.165C10.4514 15.4151 10.108 15.5556 9.75 15.5556Z" fill="#30333C"></path>
+</svg>
+</span><span class="ts-sidemenu__text">Управление поездками</span></a><a class="ts-sidemenu__link" href=""><span class="ts-sidemenu__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 11.1C13.1935 11.1 14.3381 11.5741 15.182 12.418C16.0259 13.2619 16.5 14.4065 16.5 15.6V21H14.7V15.6C14.7 14.9113 14.4369 14.2486 13.9644 13.7476C13.492 13.2465 12.8459 12.9449 12.1584 12.9045L12 12.9C11.3113 12.9 10.6486 13.1631 10.1476 13.6356C9.64649 14.108 9.3449 14.7541 9.3045 15.4416L9.3 15.6V21H7.5V15.6C7.5 14.4065 7.97411 13.2619 8.81802 12.418C9.66193 11.5741 10.8065 11.1 12 11.1ZM6.15 13.8C6.4011 13.8 6.645 13.8297 6.879 13.8846C6.72512 14.3427 6.63399 14.8195 6.6081 15.3021L6.6 15.6V15.6774C6.49655 15.6404 6.38894 15.6162 6.2796 15.6054L6.15 15.6C5.81441 15.6 5.49085 15.725 5.24242 15.9507C4.994 16.1763 4.83852 16.4864 4.8063 16.8204L4.8 16.95V21H3V16.95C3 16.1146 3.33187 15.3134 3.92261 14.7226C4.51335 14.1319 5.31457 13.8 6.15 13.8ZM17.85 13.8C18.6854 13.8 19.4866 14.1319 20.0774 14.7226C20.6681 15.3134 21 16.1146 21 16.95V21H19.2V16.95C19.2 16.6144 19.075 16.2908 18.8493 16.0424C18.6237 15.794 18.3136 15.6385 17.9796 15.6063L17.85 15.6C17.6925 15.6 17.5413 15.627 17.4 15.6765V15.6C17.4 15.0006 17.3028 14.4246 17.1219 13.8864C17.355 13.8297 17.5989 13.8 17.85 13.8ZM6.15 8.4C6.74674 8.4 7.31903 8.63705 7.74099 9.05901C8.16295 9.48097 8.4 10.0533 8.4 10.65C8.4 11.2467 8.16295 11.819 7.74099 12.241C7.31903 12.6629 6.74674 12.9 6.15 12.9C5.55326 12.9 4.98097 12.6629 4.55901 12.241C4.13705 11.819 3.9 11.2467 3.9 10.65C3.9 10.0533 4.13705 9.48097 4.55901 9.05901C4.98097 8.63705 5.55326 8.4 6.15 8.4ZM17.85 8.4C18.4467 8.4 19.019 8.63705 19.441 9.05901C19.8629 9.48097 20.1 10.0533 20.1 10.65C20.1 11.2467 19.8629 11.819 19.441 12.241C19.019 12.6629 18.4467 12.9 17.85 12.9C17.2533 12.9 16.681 12.6629 16.259 12.241C15.8371 11.819 15.6 11.2467 15.6 10.65C15.6 10.0533 15.8371 9.48097 16.259 9.05901C16.681 8.63705 17.2533 8.4 17.85 8.4ZM6.15 10.2C6.03065 10.2 5.91619 10.2474 5.8318 10.3318C5.74741 10.4162 5.7 10.5307 5.7 10.65C5.7 10.7693 5.74741 10.8838 5.8318 10.9682C5.91619 11.0526 6.03065 11.1 6.15 11.1C6.26935 11.1 6.38381 11.0526 6.4682 10.9682C6.55259 10.8838 6.6 10.7693 6.6 10.65C6.6 10.5307 6.55259 10.4162 6.4682 10.3318C6.38381 10.2474 6.26935 10.2 6.15 10.2ZM17.85 10.2C17.7307 10.2 17.6162 10.2474 17.5318 10.3318C17.4474 10.4162 17.4 10.5307 17.4 10.65C17.4 10.7693 17.4474 10.8838 17.5318 10.9682C17.6162 11.0526 17.7307 11.1 17.85 11.1C17.9693 11.1 18.0838 11.0526 18.1682 10.9682C18.2526 10.8838 18.3 10.7693 18.3 10.65C18.3 10.5307 18.2526 10.4162 18.1682 10.3318C18.0838 10.2474 17.9693 10.2 17.85 10.2ZM12 3C12.9548 3 13.8705 3.37928 14.5456 4.05442C15.2207 4.72955 15.6 5.64522 15.6 6.6C15.6 7.55478 15.2207 8.47045 14.5456 9.14558C13.8705 9.82072 12.9548 10.2 12 10.2C11.0452 10.2 10.1295 9.82072 9.45442 9.14558C8.77928 8.47045 8.4 7.55478 8.4 6.6C8.4 5.64522 8.77928 4.72955 9.45442 4.05442C10.1295 3.37928 11.0452 3 12 3ZM12 4.8C11.5226 4.8 11.0648 4.98964 10.7272 5.32721C10.3896 5.66477 10.2 6.12261 10.2 6.6C10.2 7.07739 10.3896 7.53523 10.7272 7.87279C11.0648 8.21036 11.5226 8.4 12 8.4C12.4774 8.4 12.9352 8.21036 13.2728 7.87279C13.6104 7.53523 13.8 7.07739 13.8 6.6C13.8 6.12261 13.6104 5.66477 13.2728 5.32721C12.9352 4.98964 12.4774 4.8 12 4.8Z" fill="#30333C"></path>
+</svg>
+</span><span class="ts-sidemenu__text">Дополнительно</span></a><a class="ts-sidemenu__link" href=""><span class="ts-sidemenu__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 18H9V20H2V18ZM2 11H11V13H2V11ZM2 4H22V6H2V4ZM20.674 13.025L21.83 12.634L22.83 14.366L21.914 15.171C22.0293 15.7177 22.0293 16.2823 21.914 16.829L22.83 17.634L21.83 19.366L20.674 18.975C20.264 19.345 19.776 19.63 19.239 19.805L19 21H17L16.76 19.804C16.2293 19.6306 15.7408 19.3478 15.326 18.974L14.17 19.366L13.17 17.634L14.086 16.829C13.9707 16.2823 13.9707 15.7177 14.086 15.171L13.17 14.366L14.17 12.634L15.326 13.025C15.736 12.655 16.224 12.37 16.761 12.195L17 11H19L19.24 12.196C19.776 12.37 20.264 12.656 20.674 13.026V13.025ZM18 18C18.5304 18 19.0391 17.7893 19.4142 17.4142C19.7893 17.0391 20 16.5304 20 16C20 15.4696 19.7893 14.9609 19.4142 14.5858C19.0391 14.2107 18.5304 14 18 14C17.4696 14 16.9609 14.2107 16.5858 14.5858C16.2107 14.9609 16 15.4696 16 16C16 16.5304 16.2107 17.0391 16.5858 17.4142C16.9609 17.7893 17.4696 18 18 18Z" fill="#30333C"></path>
+</svg>
+</span><span class="ts-sidemenu__text">Помощь</span></a></div>
+      </div>
+      <footer class="ts-mobile-menu__footer">
+        <div class="ts-lang-chooser dropdown">
+          <button class="ts-button ts-lang-chooser__button dropdown-toggle" type="button" data-toggle="dropdown"><img src="/ru.8765a750.png" alt="ru"><span>Язык: Русский</span></button>
+          <div class="dropdown-menu ts-lang-chooser__dropdown"><a class="dropdown-item ts-lang-chooser__item" href="#"><img src="/ru.8765a750.png" alt="ru"><span>Русский</span></a><a class="dropdown-item ts-lang-chooser__item" href="#"><img src="/kk.48556d09.png" alt="ru"><span>Қазақша</span></a><a class="dropdown-item ts-lang-chooser__item" href="#"><img src="/en.d52201ea.png" alt="ru"><span>English</span></a></div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>$(document).ready(function () {
+  // не закрывать подменю для выбора пассажиров
+  $(document).on('click', '.is--select-passengers .dropdown-menu', function (e) {
+    e.stopPropagation();
+  });
+});</script>
+    <script src="/src.e31bb0bc.js"></script>
+    <script src="/sidebar.254cde8b.js"></script>
+    <script src="/result.f9d8da39.js"></script>
+    <script src="/flight.4d6ba8a5.js"></script>
+    <script src="/seats.8d49199a.js"></script>
+  </body>
+</html>

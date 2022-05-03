@@ -1,0 +1,25 @@
+include shared/_mixins
+
+doctype html
+html(lang="ru")
+  +head('Main page')
+
+  body
+    .ts-page
+      +header
+
+      +promo
+
+      section.ts-section
+        .container
+          h3.ts-section__title Горячие предложения
+
+        .container
+          .row.row-cols-1.row-cols-lg-3.row-cols-md-2.row-cols-sm-1
+            - var n = 0;
+            while n < 9
+              .col
+                .ts-demo-block= n++
+    
+    +mobile-menu
+    +footer

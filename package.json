@@ -1,0 +1,24 @@
+{
+  "name": "tripsolver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/*.pug",
+    "build": "parcel build src/*.pug --no-source-maps --no-content-hash --no-minify --no-cache --public-url Users/yessirkepzhuman/Desktop/tripsolver-frontend-master/build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zhasik",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.5.0",
+    "node-sass": "^4.14.1",
+    "parcel-bundler": "^1.12.5",
+    "pug": "^3.0.0"
+  },
+  "dependencies": {
+    "flatpickr": "^4.6.3",
+    "nouislider": "^14.5.0",
+    "shortcut-buttons-flatpickr": "^0.3.0"
+  }
+}

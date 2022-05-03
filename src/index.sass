@@ -1,0 +1,259 @@
+@import 'libs/tooltip/tooltip'
+
+@import 'style/vars'
+@import 'style/common'
+@import 'style/datepicker'
+@import 'style/promo'
+@import 'style/sidebar'
+@import 'style/result'
+@import 'style/dropdown'
+@import 'style/slider'
+@import 'style/menu'
+@import 'style/steps'
+@import 'style/details'
+@import 'style/forms'
+@import 'style/type'
+@import 'style/modal'
+
+@import 'style/flight'
+@import 'style/tariff'
+
+@import 'style/passenger/info'
+@import 'style/passenger/seats'
+@import 'style/passenger/extras'
+
+@import 'style/payment/billing'
+@import 'style/payment/account-check'
+
+@import 'style/company'
+
+body
+  margin: 0
+  padding: 0
+  font-size: 16px
+  font-family: $font--brand
+  color: rgba(0, 0, 0, 0.87)
+  min-height: 100vh
+  background: #F5F8FC
+
+.ts-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  box-shadow: 0px 1px 0px #D8E0E9
+  margin-bottom: 1px
+  background-color: #fff
+
+  @media screen and (min-width: $media--tablet)
+    padding: 0 24px
+
+  &__last-block
+    display: flex
+
+.ts-logo
+  padding: 14px 0
+  display: none
+
+  @media screen and (min-width: $media--desktop)
+    display: initial
+
+.ts-burger-menu
+  width: 56px
+  height: 56px
+  padding: 0 15px
+  background: none
+  border: 0
+  border-right: 1px solid #D8E0E9
+
+  @media screen and (min-width: $media--desktop)
+    display: none
+
+  &:hover
+    cursor: pointer
+
+.ts-menu
+  display: none
+
+  @media screen and (min-width: $media--desktop)
+    display: initial
+
+  &__list
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+
+  &__item
+    &--has-menu
+      .ts-menu__link
+        &::after
+          content: ''
+          position: absolute
+          top: 50%
+          margin-top: -2.5px
+          margin-left: 7px
+          width: 0
+          height: 0
+          border-style: solid
+          border-width: 5px 5px 0 5px
+          border-color: #A1ADBC transparent transparent transparent
+
+    &.is--show_menu
+      .ts-submenu
+        display: block
+
+  &__link
+    font-size: 16px
+    line-height: 19px
+    color: #28282E
+    padding: 0 14px
+    text-decoration: none
+    transition: .3s
+    position: relative
+
+    @media screen and (min-width: 1045px)
+      padding: 0 24px
+
+    &:hover
+      color: #0085CC
+
+      &::after
+        border-color: #0085CC transparent transparent transparent
+
+.ts-submenu
+  position: fixed
+  left: 0
+  width: 100%
+  background: rgba(0, 0, 0, 0.25)
+  top: 77px
+  height: calc(100% - 77px)
+  z-index: $z-index--xxl
+  overflow: hidden
+  display: none
+
+  &__content
+    background: #F5F8FC
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.15)
+    padding: 30px 0 40px
+
+  &__title
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+    color: #303030
+    margin: 0 0 25px
+
+  &__list
+    list-style: none
+    padding: 0
+    margin: 0 0 36px
+
+  &__link
+    font-size: 16px
+    line-height: 19px
+    color: #2F80ED
+    text-decoration: none
+    display: inline-block
+
+  &__item
+    margin-bottom: 14px
+
+    &:hover
+      text-decoration: underline
+
+.ts-toolbox
+  display: flex
+  align-items: center
+
+  &.has--border
+    position: relative
+
+    &:after
+      content: ''
+      position: absolute
+      right: 0
+      width: 1px
+      top: -20px
+      background-color: #d8e0e9
+      height: calc(100% + 30px)
+
+      @media screen and (min-width: $media--desktop)
+        height: calc(100% + 40px)
+
+.ts-notification-center
+  margin: 0 25px
+
+.ts-auth
+  display: flex
+  align-items: center
+  padding: 0 20px
+
+  &__text
+    font-size: 16px
+    line-height: 19px
+    color: #28282E
+
+  &__icon
+    margin-right: 12px
+
+.ts-section
+  padding: 50px 0
+  background-color: #fff
+
+  &__title
+    font-weight: 500
+    font-size: 18px
+    line-height: 21px
+    text-align: justify
+    color: #28282E
+    margin: 32px 0
+
+  &--gray
+    background: #F5F8FC
+
+.ts-loading
+  height: 4px
+  background: #0085CC
+  transition: width .3s ease
+
+.ts-demo-block
+  background: #F5F8FC
+  border-radius: 8px
+  width: 100%
+  height: 240px
+  margin-bottom: 24px
+  font-size: 0
+
+h1,h2,h3,h4,h5,h6
+  font-weight: 500
+
+.ts-lang
+  &__button
+    padding: 0
+
+  &__dropdown
+    margin-top: 30px
+    width: 125px
+    background: #FFFFFF
+    border: 1px solid #D8E0E9
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+    border-radius: 4px
+
+  &__item
+    white-space: nowrap
+    display: flex
+    align-items: center
+    font-size: 14px
+    line-height: 17px
+    color: #30333C
+    border-bottom: 1px solid #D8E0E9
+
+    &:hover
+      background: $color-light
+      color: #30333C
+
+    &:last-child
+      border-bottom: 0
+
+    img
+      margin-right: 8px

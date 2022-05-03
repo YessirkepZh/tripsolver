@@ -1,0 +1,126 @@
+mixin select-passengers
+  .ts-select-passengers.is--select-passengers
+    button.ts-select-passengers__field(type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+      .ts-select-passengers__label 1 пассажир
+      .ts-select-passengers__label.ts-select-passengers__label--gray Эконом
+
+    .ts-passengers-dropdown.dropdown-menu(aria-labelledby="dropdownMenuButton")
+      .ts-passengers-dropdown__box
+        .ts-passengers-dropdown__title
+          .ts-passengers-dropdown__label Взрослые
+          .ts-passengers-dropdown__label.ts-passengers-dropdown__label--gray Старше 12 лет
+
+        .ts-passengers-dropdown__counter
+          .ts-counter
+            button.ts-counter__decrement(type="button")
+            .ts-counter__value 1
+            button.ts-counter__increment(type="button")
+
+      .ts-passengers-dropdown__box
+        .ts-passengers-dropdown__title
+          .ts-passengers-dropdown__label Дети
+          .ts-passengers-dropdown__label.ts-passengers-dropdown__label--gray От 2 до 12 лет
+
+        .ts-passengers-dropdown__counter
+          .ts-counter
+            button.ts-counter__decrement(type="button")
+            .ts-counter__value 9
+            button.ts-counter__increment(type="button")
+
+      .ts-passengers-dropdown__box
+        .ts-passengers-dropdown__title
+          .ts-passengers-dropdown__label Младенцы
+          .ts-passengers-dropdown__label.ts-passengers-dropdown__label--gray До 2 лет, без места
+
+        .ts-passengers-dropdown__counter
+          .ts-counter
+            button.ts-counter__decrement(type="button")
+            .ts-counter__value.ts-counter__value--gray 0
+            button.ts-counter__increment(type="button")
+
+      .ts-passengers-dropdown__list
+        each val in ['Эконом', 'Комфорт', 'Бизнес', 'Первый класс']
+          label.ts-radiobutton
+            input.ts-radiobutton__input(type="radio" name="fly-type")
+            span.ts-radiobutton__text= val
+
+mixin dropdown-air
+  .dropdown-menu.ts-dropdown-menu
+    .ts-dropdown-menu__wrap
+      each val in ['Нур-Султан', 'Астана', 'Целиноград', 'Акмола']
+        .ts-dropdown-menu__item
+          .ts-dropdown-menu__label
+            span= val
+            span.--gray Казахстан
+
+          .ts-dropdown-menu__airport TSE
+
+mixin chooser
+  form.ts-chooser.col-md-12(action="/")
+    .ts-chooser__input.ts-chooser__input--airport
+      input.ts-input(type="text" data-toggle="dropdown")
+      label.ts-label Откуда
+      .ts-input-airport TSE
+      +dropdown-air
+
+    .ts-chooser__input.ts-chooser__input--airport
+      input.ts-input(type="text" data-toggle="dropdown")
+      label.ts-label Куда
+      +dropdown-air
+    .ts-chooser__input.ts-chooser__input--date
+      input.ts-input.js--dates-from(type="text" placeholder="Дата вылета")
+      img.ts-icon(src="/assets/icons/date.svg", alt="")
+    .ts-chooser__input.ts-chooser__input--date
+      input.ts-input.js--dates-to(type="text" placeholder="Дата прилета")
+      img.ts-icon(src="/assets/icons/date.svg", alt="")
+    .ts-chooser__input.ts-chooser__input--passenger
+      +select-passengers
+    input.ts-button.ts-button--primary(type="submit" value="Найти")
+
+mixin promo
+  section.ts-promo
+    .container
+      .row
+        header.ts-promo__header.col-12
+          h1.ts-promo__title Бронь командировок
+
+          button.ts-button.ts-button--outline(type="button")
+            img(src="/assets/icons/template.svg", alt="").ts-icon
+            span Шаблон
+
+      .ts-promo__infoblock.row
+        .col-md-5.col-sm-12
+          input.ts-input.ts-promo__goal(type="text" placeholder="Цель командировки")
+
+        .ts-promo__switcher.col-md-5.col-sm-12
+          label(for="airplane").ts-switcher
+            input.ts-radiobutton(type="radio" checked="true" id="airplane" name="ts-trip-switcher")
+            .ts-switcher__box
+              include /assets/icons/airplane.svg
+
+          label(for="train").ts-switcher
+            input.ts-radiobutton(type="radio" id="train" name="ts-trip-switcher")
+            .ts-switcher__box
+              include /assets/icons/train.svg
+
+      .ts-promo__infoblock.row
+        +chooser
+
+      .row
+        footer.ts-promo__footer.col-md-12
+          button.ts-button.ts-promo__search(type="button")
+            img.ts-icon(src="/assets/icons/options.svg", alt="")
+            span Продвинутый поиск
+
+          .ts-promo__save-btn
+            label.ts-checkbox
+              input(type="checkbox", checked="true", name="save-as-template")
+              .ts-checkbox__pseudo
+              span.ts-checkbox__text Сохранить как шаблон
+
+mixin promo-light
+  section.ts-promo.ts-promo--light
+    .container
+      .row
+        .ts-promo__infoblock
+          +chooser

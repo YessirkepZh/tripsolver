@@ -1,0 +1,117 @@
+$FROM_TO_WIDTH: 20%
+$DATE_WIDTH: 15%
+$PASSENGER_WIDTH: 18%
+$BTN_WIDTH: 100% - ($FROM_TO_WIDTH * 2) - ($DATE_WIDTH * 2) - $PASSENGER_WIDTH
+
+.ts-chooser
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+  // @media screen and (min-width: $media--tablet)
+
+  &__input
+    position: relative
+    display: flex
+    align-items: center
+
+    .ts-label
+      position: absolute
+      font-size: 16px
+      line-height: 19px
+      color: #777B87
+      left: 20px
+      transform: translateY(0)
+      transition: transform .2s ease
+
+    &.show,
+    &.is--active
+      .ts-label
+        font-size: 14px
+        line-height: 17px
+        transform: translateY(-14px)
+
+    &--airport
+      width: 100%
+
+      @media screen and (min-width: $media--tablet)
+        width: $FROM_TO_WIDTH
+
+      .ts-input
+        font-weight: 500
+
+    &--date
+      width: 100%
+
+      @media screen and (min-width: $media--tablet)
+        width: $DATE_WIDTH
+        height: 100%
+
+      .ts-input
+        font-weight: 400
+
+    &--passenger
+      width: 100%
+
+      @media screen and (min-width: $media--tablet)
+        width: $PASSENGER_WIDTH
+        height: 100%
+
+    &:first-child
+      .ts-input
+        border-radius: 4px 0 0 4px
+
+    .ts-input
+      padding-right: 44px
+      padding-top: 24px
+      padding-bottom: 18px
+      font-size: 16px
+      line-height: 19px
+      color: #28282E
+      font-weight: 400
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: ellipsis
+
+      // &:not([value=""]):not(:focus):invalid + .ts-label
+      //   font-size: 14px
+      //   line-height: 17px
+      //   transform: translateY(-14px)
+
+    .ts-icon
+      position: absolute
+      right: 19px
+      top: 50%
+      margin-top: -6.5px
+
+  .ts-input
+    border-radius: 0
+    // margin-left: -1px
+    // border-left: 0 solid #000
+
+    &:focus
+      box-shadow: inset 0 0px 0px 2px #0384C8
+
+  .ts-button
+    display: block
+    width: 100%
+    margin-top: 16px
+
+    @media screen and (min-width: $media--tablet)
+      height: 100%
+      border-radius: 0 4px 4px 0
+      z-index: $z-index--xs
+      width: $BTN_WIDTH
+      margin: 0
+
+  // & > *
+  //   width: calc(100% / 5)!important
+
+.ts-input-airport
+  position: absolute
+  right: 10px
+  font-size: 16px
+  line-height: 19px
+  color: #777B87
+  text-transform: uppercase
+  margin-top: 6px

@@ -1,0 +1,104 @@
+.ts-mobile-menu
+  position: fixed
+  top: 0
+  height: 100vh
+  width: 100%
+  background-color: #fff
+  display: flex
+  flex-direction: column
+  z-index: $z-index--xxl
+  transform: translateX(-100%)
+  transition: transform .3s ease
+  will-change: transform
+
+  &__header
+    padding: 16px
+    border-bottom: 1px solid #D8E0E9
+
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__footer
+    border-top: 1px solid #D8E0E9
+    margin-top: auto
+
+  &__close-btn
+    padding: 0 12px
+    height: 100%
+    border: 0
+    background: none
+
+    &:hover
+      cursor: pointer
+
+  &__list
+    overflow-y: auto
+
+  &.is--show
+    transform: translateX(0)
+
+    .ts-logo
+      display: initial
+      padding: 0
+
+.ts-sidemenu
+  display: flex
+  flex-direction: column
+
+  &__link
+    font-size: 16px
+    line-height: 19px
+    color: #30333C
+    display: inline-block
+    padding: 18px
+    text-decoration: none
+
+    display: flex
+    align-items: center
+
+    & svg path
+      fill: currentColor
+
+    &:hover,
+    &--active
+      color: #0085CC
+
+  &__icon
+    margin-right: 16px
+
+.ts-lang-chooser
+  display: flex
+  align-items: center
+
+  &__button
+    font-size: 16px
+    line-height: 19px
+    color: #30333C
+    padding: 0 16px
+    font-weight: 400
+    height: 50px
+    border: 0
+
+    img
+      margin-right: 16px
+
+  &__dropdown
+    width: 100%
+    margin-top: -15px
+    left: 5px !important
+    border-radius: 0
+
+  &__item
+    display: flex
+    align-items: center
+    font-size: 14px
+    line-height: 17px
+    color: #30333C
+
+    &:hover
+      background: $color-light
+      color: #30333C
+
+    img
+      margin-right: 8px
