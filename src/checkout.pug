@@ -1,0 +1,41 @@
+include shared/_mixins
+
+include checkout/_info-company
+include checkout/_info-passenger
+
+doctype html
+html(lang="ru")
+    +head('Checkout')
+
+    body
+        .ts-page
+            +header
+            +steps
+            section.ts-flight
+                .container
+                    .row
+                        .col-lg-9
+                            h4.ts-subheading.d-lg-none.my-2 Ваш выбор:
+                            - const route = 
+                            -   { 
+                            -     company: `fly-arystan`,
+                            -     tarifs: 0,
+                            -     routes: [
+                            -       {
+                            -         transfers: 0
+                            -       }
+                            -     ]
+                            -   };
+                                +result-block(0, route.company, route.tarifs, route.routes, true)
+
+                                section.ts-flight__content
+                                    
+                                    +checkout-info-passenger
+                                    +checkout-info-company
+
+                                    +flight-actions("Продолжить")
+
+                        .col-lg-3
+                            +details
+        +mobile-menu
+        +footer

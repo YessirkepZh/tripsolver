@@ -1,0 +1,8 @@
+mixin checkout-info-passenger
+    section.ts-account-check
+        h4.ts-subheading Информация о пассажирах
+
+        form.ts-form.ts-account-check__form
+            .ts-form__group
+                +radio('Использовать Центр затрат в моем профиле.','account-check', 123456)
+                +radio('Использовать новый accounting.code.','account-check')
