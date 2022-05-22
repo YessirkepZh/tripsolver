@@ -36,7 +36,9 @@ body
   font-family: $font--brand
   color: rgba(0, 0, 0, 0.87)
   min-height: 100vh
-  background: #F5F8FC
+
+  @media screen and (min-width: $media--desktop)
+    background: #F5F8FC
 
 .ts-header
   display: flex
@@ -259,3 +261,37 @@ h1,h2,h3,h4,h5,h6
 
     img
       margin-right: 8px
+
+.ts-footer-base 
+  border-top: 1px solid $border-color
+  background-color: white
+  margin-botom: 0px
+  margin-right: 0px !important
+  padding-top: 30px
+
+  &__content
+    display: flex
+    flex-direction: column
+    margin-bottom: 30px
+    h4 
+      color: $color-secondary
+      text-transform: uppercase
+      font-weight: 500
+      font-size: 14px
+    a 
+      text-decoration: none
+      margin-bottom: 10px
+      font-weight: 400
+      font-size: 14px
+      line-height: 17px
+      color: $color-black
+      &:hover
+        text-decoration: underline
+        color: #2F80ED
+
+  &__footer
+    border-top: 1px solid #D8E0E9
+    padding: 20px;
+    div
+      color: $color-secondary
+      text-align: center
