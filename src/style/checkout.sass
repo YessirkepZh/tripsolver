@@ -25,15 +25,8 @@
         
         &:active
             background: $color-primary--light
+    
 
-    &__title 
-        font-size: $font-size--lg;
-        font-weight: 400;
-        line-height: 21.33px;
-        text-align: left;
-
-        &__name
-            text-transform: uppercase;
     
     &__code 
         color: $color-muted;
@@ -42,14 +35,52 @@
         line-height: 18.96px;
         text-align: right;
 
-    &__company
-        &__code 
+.ts-checkout-info-passenger
+   
+    &__title 
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: 21.33px;
+        text-align: left;
+        text-transform: uppercase;
+        margin-top: 10px;
+        @media screen and (min-width: $media--desktop)
+            font-size: $font-size--lg;
+
+    &__code 
+        margin-top: 10px;
         color: $color-muted;
         font-size: $font-size;
         font-weight: 400;
         line-height: 18.96px;
         text-align: right;
-        @media screen and (min-width: $media--mobile)
+
+        @media screen and (min-width: $media--desktop)
             text-align: right;
             margin-top: 10px;
             font-size: 14px;
+
+.ts-checkout-info-company
+    margin-top: 10px;
+    
+    &__title 
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+
+        @media screen and (min-width: $media--desktop)
+            font-size: $font-size--lg;
+
+
+    &__code 
+        color: $color-muted;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.96px;
+        text-align: left;
+
+        @media screen and (min-width: $media--desktop)
+            text-align: right;
+            font-size: $font-size;
+            

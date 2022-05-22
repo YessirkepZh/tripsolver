@@ -2066,14 +2066,6 @@ strong {
   .ts-checkout__content:active {
     background: #F1FAFF; }
 
-.ts-checkout__title {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21.33px;
-  text-align: left; }
-  .ts-checkout__title__name {
-    text-transform: uppercase; }
-
 .ts-checkout__code {
   color: #727580;
   font-size: 16px;
@@ -2081,17 +2073,50 @@ strong {
   line-height: 18.96px;
   text-align: right; }
 
-.ts-checkout__company {
+.ts-checkout-info-passenger__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.33px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 10px; }
+  @media screen and (min-width: 992px) {
+    .ts-checkout-info-passenger__title {
+      font-size: 18px; } }
+
+.ts-checkout-info-passenger__code {
+  margin-top: 10px;
   color: #727580;
   font-size: 16px;
   font-weight: 400;
   line-height: 18.96px;
   text-align: right; }
-  @media screen and (min-width: 576px) {
-    .ts-checkout__company {
+  @media screen and (min-width: 992px) {
+    .ts-checkout-info-passenger__code {
       text-align: right;
       margin-top: 10px;
       font-size: 14px; } }
+
+.ts-checkout-info-company {
+  margin-top: 10px; }
+  .ts-checkout-info-company__title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left; }
+    @media screen and (min-width: 992px) {
+      .ts-checkout-info-company__title {
+        font-size: 18px; } }
+  .ts-checkout-info-company__code {
+    color: #727580;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.96px;
+    text-align: left; }
+    @media screen and (min-width: 992px) {
+      .ts-checkout-info-company__code {
+        text-align: right;
+        font-size: 16px; } }
 
 body {
   margin: 0;

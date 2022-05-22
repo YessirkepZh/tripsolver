@@ -1,9 +1,9 @@
 mixin checkout-info-passenger(names)
-    section
-            h4.ts-subheading.mb-1.mt-1.mt-sm-5 Информация о пассажирах
+    section.ts-checkout-info-passenger
+            h4.ts-subheading Информация о пассажирах
             .row
                 each val in names
                     .col-6
-                        div.ts-checkout__title__name.mt-3 #{val.name}
+                        div.ts-checkout-info-passenger__title #{val.name}
                     .col-6
-                        div.ts-checkout__code.mt-3  № #{val.code}
+                        div.ts-checkout-info-passenger__code № #{val.code}

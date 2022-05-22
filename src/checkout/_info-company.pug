@@ -1,18 +1,18 @@
 mixin checkout-info-company(data)
-    section.mt-md-4
-            h4.ts-subheading.mb-1.mt-1 Информация о компании
+    section.ts-checkout-info-company
+            h4.ts-subheading Информация о компании
             .row
                 .col-md-4.col-sm-12
-                    div.ts-checkout__title.mt-3 Сфера вашего бизнеса
+                    div.ts-checkout-info-company__title Сфера вашего бизнеса
                 .col-md-8.col-sm-12
-                    div.ts-checkout__company__code  #{data.business}
-            .row
+                    div.ts-checkout-info-company__code  #{data.business}
+            .row.mt-3
                 .col-md-4.col-sm-12
-                    div.ts-checkout__title.mt-3 Ваше подразделение
+                    div.ts-checkout-info-company__title Ваше подразделение
                 .col-md-8.col-sm-12
-                    div.ts-checkout__company__code  #{data.type}
-            .row
+                    div.ts-checkout-info-company__code  #{data.type}
+            .row.mt-3
                 .col-md-4.col-sm-12
-                    div.ts-checkout__title.mt-3 Цель вашей поездки
+                    div.ts-checkout-info-company__title Цель вашей поездки
                 .col-md-8.col-sm-12
-                    div.ts-checkout__company__code  #{data.purpose}
+                    div.ts-checkout-info-company__code  #{data.purpose}
