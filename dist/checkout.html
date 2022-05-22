@@ -77,7 +77,7 @@
           </div>
         </div>
       </section>
-      <section class="ts-flight">
+      <section class="ts-checkout">
         <div class="container">
           <div class="row">
             <div class="col-lg-9">
@@ -186,99 +186,53 @@
                 </div>
                 <div class="d-lg-none mt-2"><a class="ts-result__link" href="#">Условия тарифа</a><a class="ts-result__link" href="#">Сменить тариф</a></div>
               </div>
-              <section class="ts-flight__content">
-                <section class="ts-billing">
-                  <h4 class="ts-subheading">Информация о выставлении счетов за перелеты</h4>
-                  <form class="ts-form ts-billing__form">
-                    <div class="ts-flight__row ts-flight__row--md">
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Выставить счет</label>
-                        <div class="dropdown js-dropdown">
-                          <button class="dropdown-toggle ts-form__input" type="button" data-toggle="dropdown">Временная карта</button>
-                          <div class="dropdown-menu"><a class="dropdown-item" href="#">Временная карта</a><a class="dropdown-item" href="#">Постоянный счет </a></div>
-                        </div>
-                      </div>
+              <section class="ts-checkout__content">
+                <section>
+                  <h4 class="ts-subheading mb-1 mt-1 mt-sm-5">Информация о пассажирах</h4>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="ts-checkout__title__name mt-3">Arman Mukatov</div>
                     </div>
-                    <div class="ts-flight__row ts-flight__row--md">
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Тип платежной карты</label>
-                        <div class="dropdown js-dropdown">
-                          <button class="dropdown-toggle ts-form__input" type="button" data-toggle="dropdown">Visa</button>
-                          <div class="dropdown-menu"><a class="dropdown-item" href="#">Visa</a><a class="dropdown-item" href="#">MasterCard </a></div>
-                        </div>
-                      </div>
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Номер платежной карты</label>
-                        <input class="ts-input ts-form__input" type="text" placeholder="Номер карты">
-                      </div>
+                    <div class="col-6">
+                      <div class="ts-checkout__code mt-3"> № 222</div>
                     </div>
-                    <div class="ts-flight__row ts-flight__row--sm">
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Срок окончания действия</label>
-                        <div class="dropdown js-dropdown">
-                          <button class="dropdown-toggle ts-form__input" type="button" data-toggle="dropdown">Месяц</button>
-                          <div class="dropdown-menu"><a class="dropdown-item" href="#">Январь</a><a class="dropdown-item" href="#">Февраль </a><a class="dropdown-item" href="#">Март </a><a class="dropdown-item" href="#">Апрель </a><a class="dropdown-item" href="#">Май </a><a class="dropdown-item" href="#">Июнь </a><a class="dropdown-item" href="#">Июль </a><a class="dropdown-item" href="#">Август </a><a class="dropdown-item" href="#">Сентябрь </a><a class="dropdown-item" href="#">Октябрь </a><a class="dropdown-item" href="#">Ноябрь </a><a class="dropdown-item" href="#">Декабрь </a></div>
-                        </div>
-                      </div>
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Год</label>
-                        <div class="dropdown js-dropdown">
-                          <button class="dropdown-toggle ts-form__input" type="button" data-toggle="dropdown">Год</button>
-                          <div class="dropdown-menu"><a class="dropdown-item" href="#">2020</a><a class="dropdown-item" href="#">2021 </a><a class="dropdown-item" href="#">2022 </a><a class="dropdown-item" href="#">2023 </a><a class="dropdown-item" href="#">2024</a><a class="dropdown-item" href="#">2025 </a><a class="dropdown-item" href="#">2026 </a><a class="dropdown-item" href="#">2027</a><a class="dropdown-item" href="#">2028 </a><a class="dropdown-item" href="#">2029 </a><a class="dropdown-item" href="#">2030 </a></div>
-                        </div>
-                      </div>
+                    <div class="col-6">
+                      <div class="ts-checkout__title__name mt-3">Dmitryi Skvortsov</div>
                     </div>
-                    <div class="ts-flight__row ts-flight__row--md">
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Имя на карте</label>
-                        <input class="ts-input ts-form__input" type="text" placeholder="Имя">
-                      </div>
+                    <div class="col-6">
+                      <div class="ts-checkout__code mt-3"> № 222</div>
                     </div>
-                    <div class="ts-flight__row ts-flight__row--xxl">
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Строка адреса 1</label>
-                        <input class="ts-input ts-form__input" type="text" placeholder="Адрес 1">
-                      </div>
-                    </div>
-                    <div class="ts-flight__row ts-flight__row--xxl">
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Строка адреса 2</label>
-                        <input class="ts-input ts-form__input" type="text" placeholder="Адрес 2">
-                      </div>
-                    </div>
-                    <div class="ts-flight__row ts-flight__row--md">
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Город</label>
-                        <input class="ts-input ts-form__input" type="text" placeholder="Город">
-                      </div>
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Почтовый индекс</label>
-                        <input class="ts-input ts-form__input" type="text" placeholder="Индекс">
-                      </div>
-                    </div>
-                  </form>
+                  </div>
                 </section>
-                <section class="ts-account-check">
-                  <h4 class="ts-subheading">Проверка номера бухгалтерского счета</h4>
-                  <form class="ts-form ts-account-check__form">
-                    <div class="ts-form__group">
-                      <div class="ts-radio">
-                        <input type="radio" name="account-check" id="name1">
-                        <label for="name1">
-                          <div class="ts-radio__pseudo"></div><span class="ts-radio__content"><span class="ts-radio__text">Использовать Центр затрат в моем профиле.</span><span class="ts-radio__description">123456</span></span>
-                        </label>
-                      </div>
-                      <div class="ts-radio">
-                        <input type="radio" name="account-check" id="name2">
-                        <label for="name2">
-                          <div class="ts-radio__pseudo"></div><span class="ts-radio__content"><span class="ts-radio__text">Использовать новый accounting.code.</span></span>
-                        </label>
-                      </div>
+                <section class="mt-md-4">
+                  <h4 class="ts-subheading mb-1 mt-1">Информация о компании</h4>
+                  <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                      <div class="ts-checkout__title mt-3">Сфера вашего бизнеса</div>
                     </div>
-                  </form>
+                    <div class="col-md-8 col-sm-12">
+                      <div class="ts-checkout__company__code"> Страховой бизнес</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                      <div class="ts-checkout__title mt-3">Ваше подразделение</div>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                      <div class="ts-checkout__company__code"> Юридическое сопровождение</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                      <div class="ts-checkout__title mt-3">Цель вашей поездки</div>
+                    </div>
+                    <div class="col-md-8 col-sm-12">
+                      <div class="ts-checkout__company__code"> Встреча с Resmi. Вопросы о регулировках в системе поддачи в ГДС </div>
+                    </div>
+                  </div>
                 </section>
-                <div class="ts-flight__actions">
-                  <button class="ts-button ts-button--primary ts-flight__button" type="button"><span>Продолжить</span></button><a class="ts-flight__link" href="#">Зарезервировать поездку</a>
+                <div class="ts-flight__actions-single">
+                  <button class="ts-button ts-button--primary ts-flight__button" type="button"><span>Оплатить</span></button>
                 </div>
               </section>
             </div>

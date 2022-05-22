@@ -1,0 +1,55 @@
+.ts-checkout
+    &__content
+        background: $color-white
+        border: 1px solid $border-color
+        border-radius: $border-radius
+        cursor: pointer
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin: 8px 0
+        min-height: 120px
+        padding: 12px 16px
+        transition: all 0.3s ease-in-out
+        @media screen and (min-width: $media--desktop)
+            padding: $ts-result-padding
+            min-height: 230px
+            
+            &:first-child
+                margin-top: 0
+
+            
+
+        &:hover
+            border-color: $color-primary
+        
+        &:active
+            background: $color-primary--light
+
+    &__title 
+        font-size: $font-size--lg;
+        font-weight: 400;
+        line-height: 21.33px;
+        text-align: left;
+
+        &__name
+            text-transform: uppercase;
+    
+    &__code 
+        color: $color-muted;
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: 18.96px;
+        text-align: right;
+
+    &__company
+        &__code 
+        color: $color-muted;
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: 18.96px;
+        text-align: right;
+        @media screen and (min-width: $media--mobile)
+            text-align: right;
+            margin-top: 10px;
+            font-size: 14px;

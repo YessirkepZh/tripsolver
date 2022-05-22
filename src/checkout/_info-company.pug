@@ -1,8 +1,18 @@
-mixin checkout-info-company
-    section.ts-account-check
-        h4.ts-subheading Информация о компании
-
-        form.ts-form.ts-account-check__form
-            .ts-form__group
-                +radio('Использовать Центр затрат в моем профиле.','account-check', 123456)
-                +radio('Использовать новый accounting.code.','account-check')
+mixin checkout-info-company(data)
+    section.mt-md-4
+            h4.ts-subheading.mb-1.mt-1 Информация о компании
+            .row
+                .col-md-4.col-sm-12
+                    div.ts-checkout__title.mt-3 Сфера вашего бизнеса
+                .col-md-8.col-sm-12
+                    div.ts-checkout__company__code  #{data.business}
+            .row
+                .col-md-4.col-sm-12
+                    div.ts-checkout__title.mt-3 Ваше подразделение
+                .col-md-8.col-sm-12
+                    div.ts-checkout__company__code  #{data.type}
+            .row
+                .col-md-4.col-sm-12
+                    div.ts-checkout__title.mt-3 Цель вашей поездки
+                .col-md-8.col-sm-12
+                    div.ts-checkout__company__code  #{data.purpose}

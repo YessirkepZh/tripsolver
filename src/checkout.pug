@@ -6,12 +6,13 @@ include checkout/_info-passenger
 doctype html
 html(lang="ru")
     +head('Checkout')
-
+    - var  data = { business: 'Страховой бизнес', type: 'Юридическое сопровождение', purpose: 'Встреча с Resmi. Вопросы о регулировках в системе поддачи в ГДС ' }
+    - var names = [{ name: 'Arman Mukatov', code: 222 }, { name: 'Dmitryi Skvortsov', code: '222'}]
     body
         .ts-page
             +header
             +steps
-            section.ts-flight
+            section.ts-checkout
                 .container
                     .row
                         .col-lg-9
@@ -28,12 +29,11 @@ html(lang="ru")
                             -   };
                                 +result-block(0, route.company, route.tarifs, route.routes, true)
 
-                                section.ts-flight__content
+                                section.ts-checkout__content
                                     
-                                    +checkout-info-passenger
-                                    +checkout-info-company
-
-                                    +flight-actions("Продолжить")
+                                    +checkout-info-passenger(names)
+                                    +checkout-info-company(data)
+                                    +flight-actions-single("Оплатить")
 
                         .col-lg-3
                             +details

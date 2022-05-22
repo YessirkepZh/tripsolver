@@ -1756,6 +1756,13 @@ strong {
         display: flex;
         align-items: center;
         padding: 60px 0; } }
+  .ts-flight__actions-single {
+    padding: 40px 0 20px 0; }
+    @media screen and (min-width: 992px) {
+      .ts-flight__actions-single {
+        display: flex;
+        align-items: center;
+        padding: 40px 0 10px 0; } }
   @media screen and (min-width: 992px) {
     .ts-flight__row--sm {
       display: grid;
@@ -2035,6 +2042,56 @@ strong {
     margin-right: 1rem; }
   .ts-company__security p {
     margin-top: 0; }
+
+.ts-checkout__content {
+  background: #FFFFFF;
+  border: 1px solid #D8E0E9;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8px 0;
+  min-height: 120px;
+  padding: 12px 16px;
+  transition: all 0.3s ease-in-out; }
+  @media screen and (min-width: 992px) {
+    .ts-checkout__content {
+      padding: 24px;
+      min-height: 230px; }
+      .ts-checkout__content:first-child {
+        margin-top: 0; } }
+  .ts-checkout__content:hover {
+    border-color: #0085CC; }
+  .ts-checkout__content:active {
+    background: #F1FAFF; }
+
+.ts-checkout__title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.33px;
+  text-align: left; }
+  .ts-checkout__title__name {
+    text-transform: uppercase; }
+
+.ts-checkout__code {
+  color: #727580;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  text-align: right; }
+
+.ts-checkout__company {
+  color: #727580;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.96px;
+  text-align: right; }
+  @media screen and (min-width: 576px) {
+    .ts-checkout__company {
+      text-align: right;
+      margin-top: 10px;
+      font-size: 14px; } }
 
 body {
   margin: 0;
