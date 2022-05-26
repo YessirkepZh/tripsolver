@@ -2337,14 +2337,14 @@ h1, h2, h3, h4, h5, h6 {
       text-transform: uppercase;
       font-weight: 500;
       font-size: 14px; }
-    .ts-footer-base__content a {
+    .ts-footer-base__content div a {
       text-decoration: none;
       margin-bottom: 10px;
       font-weight: 400;
       font-size: 14px;
       line-height: 17px;
       color: #000000; }
-      .ts-footer-base__content a:hover {
+      .ts-footer-base__content div a:hover {
         text-decoration: underline;
         color: #2F80ED; }
   .ts-footer-base__footer {
