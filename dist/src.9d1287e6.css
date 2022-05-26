@@ -2333,6 +2333,15 @@ h1, h2, h3, h4, h5, h6 {
   @media (max-width: 576px) {
     .ts-footer-base__logo img {
       margin: 30px 0; } }
+  @media screen and (min-width: 992px) {
+    .ts-footer-base__content .collapse {
+      display: flex;
+      height: auto !important;
+      visibility: visible; }
+    .ts-footer-base__content .collapsing {
+      position: relative;
+      height: unset !important;
+      overflow: hidden; } }
   @media (max-width: 576px) {
     .ts-footer-base__content {
       border-bottom: 1px solid #D8E0E9; }
@@ -2347,9 +2356,13 @@ h1, h2, h3, h4, h5, h6 {
       text-transform: uppercase;
       font-weight: 500;
       font-size: 14px; }
-    @media screen and (min-width: 992px) {
-      .ts-footer-base__content__title img {
-        display: none; } }
+    .ts-footer-base__content__title img {
+      transition: all 0.3s ease; }
+      @media screen and (min-width: 992px) {
+        .ts-footer-base__content__title img {
+          display: none; } }
+  .ts-footer-base__content__title[aria-expanded="true"] img {
+    transform: rotate(90deg); }
   .ts-footer-base__content__href {
     display: flex;
     flex-direction: column;

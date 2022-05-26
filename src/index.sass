@@ -276,6 +276,16 @@ h1,h2,h3,h4,h5,h6
         margin: 30px 0
 
   &__content
+    @media screen and (min-width: $media--desktop)
+      .collapse
+        display: flex
+        height: auto !important
+        visibility: visible
+      .collapsing
+        position: relative
+        height: unset !important
+        overflow: hidden
+
     @media (max-width: $media--mobile)
       border-bottom: 1px solid #D8E0E9
       &:last-child 
@@ -290,8 +300,13 @@ h1,h2,h3,h4,h5,h6
         font-weight: 500
         font-size: 14px
       img
+        transition: all 0.3s ease
         @media screen and (min-width: $media--desktop)
           display: none
+
+    &__title[aria-expanded="true"]
+      img
+        transform: rotate(90deg)
 
     &__href
       display: flex
