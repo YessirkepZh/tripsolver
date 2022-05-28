@@ -1,18 +1,58 @@
-mixin passenger-info
+mixin passenger-info(passengers)
     section.ts-info
-        h4.ts-subheading Пассажир 1
+        each passenger in passengers
+            div.ts-info__header
+                h4.ts-subheading Пассажир #{passenger.order}
+                div.ts-info__header__action(data-toggle="collapse" href=`#collapse${passenger.order}`  aria-expanded="false")
+                    span Изменить
+                    img(src="/assets/icons/vector.svg" alt="logo" width="11")
+            div(id=`collapse${passenger.order}`  class="accordion-body collapse").ts-form.ts-info__form
+                .ts-flight__row.ts-flight__row--xl
+                    .ts-form__group
+                        label.ts-form__label Имя
+                        input.ts-input.ts-form__input(type="text" placeholder="Введите ваше имя")
 
-        .ts-form.ts-info__form
-            .ts-flight__row.ts-flight__row--xl
-                .ts-form__group
-                    label.ts-form__label Имя
-                    input.ts-input.ts-form__input(type="text" placeholder="Введите ваше имя")
+                    .ts-form__group
+                        label.ts-form__label Второе имя
+                        input.ts-input.ts-form__input(type="text" placeholder="Введите ваше второе имя")
 
-                .ts-form__group
-                    label.ts-form__label Второе имя
-                    input.ts-input.ts-form__input(type="text" placeholder="Введите ваше второе имя")
+                    .ts-form__group
+                        label.ts-form__label Фамилия
+                        input.ts-input.ts-form__input(type="text" placeholder="Введите вашу фамилию")
+                    
+                    .ts-form__group
+                            label.ts-form__label Пол
 
-                .ts-form__group
-                    label.ts-form__label Фамилия
-                    input.ts-input.ts-form__input(type="text" placeholder="Введите вашу фамилию")
+                            .dropdown.js-dropdown
+                                button.dropdown-toggle.ts-form__input(type="button" data-toggle="dropdown") Не выбрано
+
+                                .dropdown-menu
+                                    a.dropdown-item(href="#") Мужчина
+                                    a.dropdown-item(href="#") Женщина
+
+                    .ts-form__group
+                            label.ts-form__label Гражданство
+
+                            .dropdown.js-dropdown
+                                button.dropdown-toggle.ts-form__input(type="button" data-toggle="dropdown") Не выбрано
+
+                                .dropdown-menu
+                                    a.dropdown-item(href="#") Резидент
+                                    a.dropdown-item(href="#") Нерезидент
+
+                    .ts-form__group
+                        label.ts-form__label Дата рождения
+                        input.ts-input.ts-form__input(type="text" placeholder="дд.мм.гггг." onfocus="(this.type='date')")
+
+                    .ts-form__group
+                        label.ts-form__label Номер документа
+                        input.ts-input.ts-form__input(type="text" placeholder="Введите номер документа")
+                    
+                    .ts-form__group
+                        label.ts-form__label Срок действия
+                        input.ts-input.ts-form__input(type="text" placeholder="дд.мм.гггг." onfocus="(this.type='date')")
+                    
+                    .ts-form__group
+                        label.ts-form__label ИИН
+                        input.ts-input.ts-form__input(type="text" placeholder="Введите ИИН")
 

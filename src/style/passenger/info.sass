@@ -1,1 +1,24 @@
 .ts-info
+    &__header
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        
+        &__action
+            display: flex
+            flex-direction: row
+            border-bottom: 1px solid #D8E0E9
+            &:last-child 
+                border-bottom: none
+                
+            span 
+                text-decoration: none
+                color: #0085CC
+                margin: 24px
+                cursor: pointer
+            img 
+                transition: all 0.3s ease
+
+        &__action[aria-expanded="true"]
+            img
+                transform: rotate(180deg)

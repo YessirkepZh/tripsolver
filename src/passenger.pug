@@ -30,13 +30,20 @@ html(lang="ru")
                                 +result-block(0, route.company, route.tarifs, route.routes, true)
 
                                 section.ts-flight__content
-                                    h3.ts-heading Информация о пассажире
+                                    div.ts-flight__content__main
+                                        h3.ts-heading Информация о пассажире
+                                        - const passengers = [{order: 1, name: 'Ivan'},{order: 2, name: 'makpal'}]
+                                        
+                                        +passenger-info(passengers)
 
-                                    +passenger-info
-                                    +passenger-seats
-                                    +passenger-extras
-            
-                                    +flight-actions("Продолжить")
+                                        +passenger-seats
+                                        +passenger-extras
+
+                                    div.ts-flight__content__add
+                                        a(href="") Добавить нового пассажира
+
+                                    div.ts-flight__content__main
+                                        +flight-actions("Продолжить")
                         .col-lg-3
                             +details
         +mobile-menu

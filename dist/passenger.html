@@ -187,124 +187,212 @@
                 <div class="d-lg-none mt-2"><a class="ts-result__link" href="#">Условия тарифа</a><a class="ts-result__link" href="#">Сменить тариф</a></div>
               </div>
               <section class="ts-flight__content">
-                <h3 class="ts-heading">Информация о пассажире</h3>
-                <section class="ts-info">
-                  <h4 class="ts-subheading">Пассажир 1</h4>
-                  <div class="ts-form ts-info__form">
-                    <div class="ts-flight__row ts-flight__row--xl">
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Имя</label>
-                        <input class="ts-input ts-form__input" type="text" placeholder="Введите ваше имя">
-                      </div>
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Второе имя</label>
-                        <input class="ts-input ts-form__input" type="text" placeholder="Введите ваше второе имя">
-                      </div>
-                      <div class="ts-form__group">
-                        <label class="ts-form__label">Фамилия</label>
-                        <input class="ts-input ts-form__input" type="text" placeholder="Введите вашу фамилию">
-                      </div>
+                <div class="ts-flight__content__main">
+                  <h3 class="ts-heading">Информация о пассажире</h3>
+                  <section class="ts-info">
+                    <div class="ts-info__header">
+                      <h4 class="ts-subheading">Пассажир 1</h4>
+                      <div class="ts-info__header__action" data-toggle="collapse" href="#collapse1" aria-expanded="false"><span>Изменить</span><img src="/vector.4136705d.svg" alt="logo" width="11"></div>
                     </div>
-                  </div>
-                </section>
-                <section class="ts-seats">
-                  <h4 class="ts-subheading">Выберите место для пассажира 1</h4>
-                  <article>
-                    <div class="ts-seats__text">Airbus a380</div>
-                    <div class="ts-seats__description">Эконом (оставшиеся места: 14)</div>
-                  </article>
-                  <div class="ts-seats__wrap">
-                    <div class="ts-seats__table js-seats-table"></div>
-                  </div>
-                  <ul class="ts-seats__legend">
-                    <li class="ts-seats__legend-item">
-                      <div class="ts-seats__cell"></div>
-                      <label>Свободное место</label>
-                    </li>
-                    <li class="ts-seats__legend-item">
-                      <div class="ts-seats__cell ts-seats__cell--exit"> </div>
-                      <label>Свободное место у выхода</label>
-                    </li>
-                    <li class="ts-seats__legend-item">
-                      <div class="ts-seats__cell ts-seats__cell--unavailable"> </div>
-                      <label>Место не доступно</label>
-                    </li>
-                    <li class="ts-seats__legend-item">
-                      <div class="ts-seats__cell ts-seats__cell--premium"> </div>
-                      <label>Место премиум класса</label>
-                    </li>
-                    <li class="ts-seats__legend-item">
-                      <div class="ts-seats__cell ts-seats__cell--exit-premium"> </div>
-                      <label>Место премиум класса у выхода</label>
-                    </li>
-                    <li class="ts-seats__legend-item">
-                      <div class="ts-seats__cell ts-seats__cell--taken"></div>
-                      <label>Место занято</label>
-                    </li>
-                    <li class="ts-seats__legend-item">
-                      <div class="ts-seats__cell ts-seats__cell--extra"></div>
-                      <label>Дополнительное место за плату</label>
-                    </li>
-                    <li class="ts-seats__legend-item">
-                      <div class="ts-seats__cell ts-seats__cell--exit-extra"></div>
-                      <label>Дополнительное место за плату у выхода</label>
-                    </li>
-                    <li class="ts-seats__legend-item">
-                      <div class="ts-seats__cell ts-seats__cell--exit ts-seats__cell--taken"></div>
-                      <label>Место у выхода (должно быть зарезервировано в аэропорту)</label>
-                    </li>
-                  </ul>
-                  <article class="ts-seats__selected-info"><span class="ts-seats__text">Выбрано: </span><span class="ts-seats__description js-seats-result">F16</span></article>
-                  <article class="ts-flight__warning"><img src="/warning.630a9a37.svg" alt="Внимание">
-                    <p>
-                      Срок удержания брони мест премиум-класса (за уплату) до совершения оплаты для авиакомпаний может различаться. Он может составлять от 2 до 48 часов. Если в течение этого срока выбранных мест не будет совершена, выбор мест будут отменены. 
-                      Плата за места взимается в момент оформления билета и не подлежит возврату. <br>Сбор за место премиум-класса подлежат возмещению
-                    </p>
-                  </article>
-                </section>
-                <section class="ts-extras">
-                  <div class="ts-extras__block">
-                    <h4 class="ts-subheading">Особые требования</h4>
-                    <div class="ts-form ts-extras__form">
-                      <div class="ts-flight__row ts-flight__row--md">
+                    <div class="accordion-body collapse ts-form ts-info__form" id="collapse1">
+                      <div class="ts-flight__row ts-flight__row--xl">
                         <div class="ts-form__group">
-                          <label class="ts-form__label">Особые потребности</label>
+                          <label class="ts-form__label">Имя</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Второе имя</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="Введите ваше второе имя">
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Фамилия</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="Введите вашу фамилию">
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Пол</label>
                           <div class="dropdown js-dropdown">
                             <button class="dropdown-toggle ts-form__input" type="button" data-toggle="dropdown">Не выбрано</button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Не выбрано</a><a class="dropdown-item" href="#">Сопровождение </a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Мужчина</a><a class="dropdown-item" href="#">Женщина</a></div>
                           </div>
                         </div>
                         <div class="ts-form__group">
-                          <label class="ts-form__label">Заявка на питание (если возможно)</label>
+                          <label class="ts-form__label">Гражданство</label>
                           <div class="dropdown js-dropdown">
                             <button class="dropdown-toggle ts-form__input" type="button" data-toggle="dropdown">Не выбрано</button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Не выбрано</a><a class="dropdown-item" href="#">Ланч </a><a class="dropdown-item" href="#">Полдник </a><a class="dropdown-item" href="#">Напиток </a></div>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Резидент</a><a class="dropdown-item" href="#">Нерезидент</a></div>
+                          </div>
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Дата рождения</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="дд.мм.гггг." onfocus="(this.type='date')">
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Номер документа</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="Введите номер документа">
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Срок действия</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="дд.мм.гггг." onfocus="(this.type='date')">
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">ИИН</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="Введите ИИН">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ts-info__header">
+                      <h4 class="ts-subheading">Пассажир 2</h4>
+                      <div class="ts-info__header__action" data-toggle="collapse" href="#collapse2" aria-expanded="false"><span>Изменить</span><img src="/vector.4136705d.svg" alt="logo" width="11"></div>
+                    </div>
+                    <div class="accordion-body collapse ts-form ts-info__form" id="collapse2">
+                      <div class="ts-flight__row ts-flight__row--xl">
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Имя</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Второе имя</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="Введите ваше второе имя">
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Фамилия</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="Введите вашу фамилию">
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Пол</label>
+                          <div class="dropdown js-dropdown">
+                            <button class="dropdown-toggle ts-form__input" type="button" data-toggle="dropdown">Не выбрано</button>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Мужчина</a><a class="dropdown-item" href="#">Женщина</a></div>
+                          </div>
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Гражданство</label>
+                          <div class="dropdown js-dropdown">
+                            <button class="dropdown-toggle ts-form__input" type="button" data-toggle="dropdown">Не выбрано</button>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Резидент</a><a class="dropdown-item" href="#">Нерезидент</a></div>
+                          </div>
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Дата рождения</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="дд.мм.гггг." onfocus="(this.type='date')">
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Номер документа</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="Введите номер документа">
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">Срок действия</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="дд.мм.гггг." onfocus="(this.type='date')">
+                        </div>
+                        <div class="ts-form__group">
+                          <label class="ts-form__label">ИИН</label>
+                          <input class="ts-input ts-form__input" type="text" placeholder="Введите ИИН">
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="ts-seats">
+                    <h4 class="ts-subheading">Выберите место для пассажира 1</h4>
+                    <article>
+                      <div class="ts-seats__text">Airbus a380</div>
+                      <div class="ts-seats__description">Эконом (оставшиеся места: 14)</div>
+                    </article>
+                    <div class="ts-seats__wrap">
+                      <div class="ts-seats__table js-seats-table"></div>
+                    </div>
+                    <ul class="ts-seats__legend">
+                      <li class="ts-seats__legend-item">
+                        <div class="ts-seats__cell"></div>
+                        <label>Свободное место</label>
+                      </li>
+                      <li class="ts-seats__legend-item">
+                        <div class="ts-seats__cell ts-seats__cell--exit"> </div>
+                        <label>Свободное место у выхода</label>
+                      </li>
+                      <li class="ts-seats__legend-item">
+                        <div class="ts-seats__cell ts-seats__cell--unavailable"> </div>
+                        <label>Место не доступно</label>
+                      </li>
+                      <li class="ts-seats__legend-item">
+                        <div class="ts-seats__cell ts-seats__cell--premium"> </div>
+                        <label>Место премиум класса</label>
+                      </li>
+                      <li class="ts-seats__legend-item">
+                        <div class="ts-seats__cell ts-seats__cell--exit-premium"> </div>
+                        <label>Место премиум класса у выхода</label>
+                      </li>
+                      <li class="ts-seats__legend-item">
+                        <div class="ts-seats__cell ts-seats__cell--taken"></div>
+                        <label>Место занято</label>
+                      </li>
+                      <li class="ts-seats__legend-item">
+                        <div class="ts-seats__cell ts-seats__cell--extra"></div>
+                        <label>Дополнительное место за плату</label>
+                      </li>
+                      <li class="ts-seats__legend-item">
+                        <div class="ts-seats__cell ts-seats__cell--exit-extra"></div>
+                        <label>Дополнительное место за плату у выхода</label>
+                      </li>
+                      <li class="ts-seats__legend-item">
+                        <div class="ts-seats__cell ts-seats__cell--exit ts-seats__cell--taken"></div>
+                        <label>Место у выхода (должно быть зарезервировано в аэропорту)</label>
+                      </li>
+                    </ul>
+                    <article class="ts-seats__selected-info"><span class="ts-seats__text">Выбрано: </span><span class="ts-seats__description js-seats-result">F16</span></article>
+                    <article class="ts-flight__warning"><img src="/warning.630a9a37.svg" alt="Внимание">
+                      <p>
+                        Срок удержания брони мест премиум-класса (за уплату) до совершения оплаты для авиакомпаний может различаться. Он может составлять от 2 до 48 часов. Если в течение этого срока выбранных мест не будет совершена, выбор мест будут отменены. 
+                        Плата за места взимается в момент оформления билета и не подлежит возврату. <br>Сбор за место премиум-класса подлежат возмещению
+                      </p>
+                    </article>
+                  </section>
+                  <section class="ts-extras">
+                    <div class="ts-extras__block">
+                      <h4 class="ts-subheading">Особые требования</h4>
+                      <div class="ts-form ts-extras__form">
+                        <div class="ts-flight__row ts-flight__row--md">
+                          <div class="ts-form__group">
+                            <label class="ts-form__label">Особые потребности</label>
+                            <div class="dropdown js-dropdown">
+                              <button class="dropdown-toggle ts-form__input" type="button" data-toggle="dropdown">Не выбрано</button>
+                              <div class="dropdown-menu"><a class="dropdown-item" href="#">Не выбрано</a><a class="dropdown-item" href="#">Сопровождение </a></div>
+                            </div>
+                          </div>
+                          <div class="ts-form__group">
+                            <label class="ts-form__label">Заявка на питание (если возможно)</label>
+                            <div class="dropdown js-dropdown">
+                              <button class="dropdown-toggle ts-form__input" type="button" data-toggle="dropdown">Не выбрано</button>
+                              <div class="dropdown-menu"><a class="dropdown-item" href="#">Не выбрано</a><a class="dropdown-item" href="#">Ланч </a><a class="dropdown-item" href="#">Полдник </a><a class="dropdown-item" href="#">Напиток </a></div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="ts-extras__block">
-                    <h4 class="ts-subheading">Программы лояльности</h4>
-                    <div class="ts-form ts-extras__form">
-                      <div class="ts-flight__row ts-flight__row--md">
-                        <div class="ts-form__group">
-                          <label class="ts-form__label">Программа лояльности авиакомпании</label>
-                          <div class="dropdown js-dropdown">
-                            <button class="dropdown-toggle ts-form__input" type="button" data-toggle="dropdown">Не выбрано</button>
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Не выбрано</a><a class="dropdown-item" href="#">Бизнес </a></div>
+                    <div class="ts-extras__block">
+                      <h4 class="ts-subheading">Программы лояльности</h4>
+                      <div class="ts-form ts-extras__form">
+                        <div class="ts-flight__row ts-flight__row--md">
+                          <div class="ts-form__group">
+                            <label class="ts-form__label">Программа лояльности авиакомпании</label>
+                            <div class="dropdown js-dropdown">
+                              <button class="dropdown-toggle ts-form__input" type="button" data-toggle="dropdown">Не выбрано</button>
+                              <div class="dropdown-menu"><a class="dropdown-item" href="#">Не выбрано</a><a class="dropdown-item" href="#">Бизнес </a></div>
+                            </div>
                           </div>
-                        </div>
-                        <div class="ts-form__group">
-                          <label class="ts-form__label">Программа часто летающих пассажиров</label>
-                          <input class="ts-input ts-form__input" type="text" placeholder="Номер программы">
+                          <div class="ts-form__group">
+                            <label class="ts-form__label">Программа часто летающих пассажиров</label>
+                            <input class="ts-input ts-form__input" type="text" placeholder="Номер программы">
+                          </div>
                         </div>
                       </div>
                     </div>
+                  </section>
+                </div>
+                <div class="ts-flight__content__add"><a href="">Добавить нового пассажира</a></div>
+                <div class="ts-flight__content__main">
+                  <div class="ts-flight__actions">
+                    <button class="ts-button ts-button--primary ts-flight__button" type="button"><span>Продолжить</span></button><a class="ts-flight__link" href="#">Зарезервировать поездку</a>
                   </div>
-                </section>
-                <div class="ts-flight__actions">
-                  <button class="ts-button ts-button--primary ts-flight__button" type="button"><span>Продолжить</span></button><a class="ts-flight__link" href="#">Зарезервировать поездку</a>
                 </div>
               </section>
             </div>

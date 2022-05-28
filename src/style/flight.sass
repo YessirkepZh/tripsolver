@@ -9,10 +9,22 @@
         margin-top: 1rem
         background: $color-white
         border-radius: $border-radius
-        padding: 16px 0
 
-        @media screen and (min-width: $media--desktop)
-            padding: 24px
+        &__main
+            @media screen and (min-width: $media--desktop)
+                padding: 24px
+            padding: 16px 0
+        &__add
+            @media screen and (min-width: $media--desktop)
+                padding: 0 24px
+            padding: 0 16px
+            border-top: 1px solid #D8E0E9
+            a
+                display: block
+                color: #0085CC
+                text-decoration: none
+                margin-top: 20px
+
 
     &__link
         display: block
@@ -47,7 +59,7 @@
             display: flex
             align-items: center
     
-            padding: 60px 0
+            padding: 40px 0
 
     &__actions-single
         padding: 40px 0 20px 0
