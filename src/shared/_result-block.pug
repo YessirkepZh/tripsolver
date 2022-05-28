@@ -86,7 +86,7 @@ mixin result-details-item(isLast)
       .ts-result__subtitle Авиакомпания: Air astana
       .ts-result__subtitle Рейс: KC-852
       .ts-result__subtitle В пути: 1 час 30 мин
-      a.ts-result__subtitle.ts-result__subtitle--link(href='#') Условия тарифа
+      //- a.ts-result__subtitle.ts-result__subtitle--link(href='#') Условия тарифа
 
 mixin result-details(route, label)
   .ts-result__details-wrap
@@ -105,12 +105,12 @@ mixin result-block(index, company, tarifs, routes, selected)
   .ts-result
     .ts-result__body(data-toggle="collapse" href=href)
       .ts-result__content
-        .d-lg-none
-          if tarifs
-            .ts-result__description #{tarifs} тарифа
-            .ts-result__price от 18 780 ₸
-          else
-            .ts-result__price 18 780 ₸
+        //- .d-lg-none
+        //-   if tarifs
+        //-     .ts-result__description #{tarifs} тарифа
+        //-     .ts-result__price от 18 780 ₸
+        //-   else
+        //-     .ts-result__price 18 780 ₸
 
         .ts-result__info
           .ts-result__routes
