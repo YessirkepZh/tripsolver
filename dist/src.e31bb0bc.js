@@ -3177,6 +3177,7 @@ var _ru = require("flatpickr/dist/l10n/ru.js");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // sidebar mobile menu
+var isCollapsed = false;
 $(document).ready(function () {
   $(document).on('click', '.is--select-passengers .dropdown-menu', function (e) {
     e.stopPropagation();
@@ -3203,6 +3204,9 @@ $(document).ready(function () {
     } else {
       $(e.target).removeClass('is--active');
     }
+  });
+  $('#resultCollapse').on('hidden.bs.collapse', function (e) {
+    e.currentTarget.addClass('collapse2');
   });
   var start_day = [];
   var second_date = (0, _flatpickr.default)(".js--dates-to", {
@@ -3262,7 +3266,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63084" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62190" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

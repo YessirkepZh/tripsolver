@@ -83,7 +83,7 @@ mixin result-details-item(isLast)
               .ts-result__description Алматы
 
     .ts-result__details-info
-      .ts-result__subtitle Авиакомпания: Air astana
+      .ts-result__subtitle.ml-lg-0.ml-10 Авиакомпания: Air astana
       .ts-result__subtitle Рейс: KC-852
       .ts-result__subtitle В пути: 1 час 30 мин
       //- a.ts-result__subtitle.ts-result__subtitle--link(href='#') Условия тарифа
@@ -101,17 +101,57 @@ mixin result-details(route, label)
 mixin result-block(index, company, tarifs, routes, selected)
   - var href = '#result'+index;
   - var id = 'result'+index;
+  
 
-  .ts-result
+  if isCollapsed
+    div ssss
+  script.
+    var something = function () {
+      document.getElementById("#resultCollapse").style("border", "1px solid red");
+    }
+  
+  .ts-result-mobile.d-lg-none.d-block
+    .ts-result-mobile__header(data-toggle="collapse" href="#resultCollapse"  aria-expanded="false")
+      .row.justify-content-between
+        .col-8
+          img(src=`/assets/img/company/${company}.png`).ts-result__company-img
+        .col-4
+          .ts-result-mobile__subtitle.pt-2 Рейс: KC-852
+    .ts-result-mobile__body(id="resultCollapse" class="accordion-body collapse")
+      .row.justify-content-between
+        .col-10
+          - var detailsIndex = 1;
+          each route in routes
+            - var label = detailsIndex > 0 ? 'Обратно' : 'Туда';
+            +result-details(route, label)
+          //-   - detailsIndex++;   
+          //- if totalTransfers == 1
+          //-   .ts-result__subtitle #{totalTransfers} пересадка
+          //-   .ts-result__description Новосибирск
+          //- else if totalTransfers > 1 
+          //-   .ts-result__subtitle #{totalTransfers} пересадки
+          //-   .ts-result__description (VNO) (KGR)
+          //- else
+            
+          //-   .ts-result__subtitle без пересадок
+    
+    .ts-result-mobile__footer
+      if selected
+      .mt-2.ts-result__detail__footer
+        .row
+          .col-6
+            a(href="#").ts-result__link Условия тарифа
+            //- a(href="#").ts-result__link Сменить тариф
+          .col-6
+            if tarifs
+              .ts-result__description #{tarifs} тарифа
+              .ts-result__price от 18 780 ₸
+            else
+              .ts-result__price 18 780 ₸
+
+  .ts-result.d-none.d-lg-block
     .ts-result__body(data-toggle="collapse" href=href)
       .ts-result__content
-        //- .d-lg-none
-        //-   if tarifs
-        //-     .ts-result__description #{tarifs} тарифа
-        //-     .ts-result__price от 18 780 ₸
-        //-   else
-        //-     .ts-result__price 18 780 ₸
-
         .ts-result__info
           .ts-result__routes
             -var totalTransfers = 0
@@ -133,7 +173,7 @@ mixin result-block(index, company, tarifs, routes, selected)
 
 
     .ts-result__details-collapse.collapse(id=id)
-      - var detailsIndex = 0;
+      - var detailsIndex = 1;
       each route in routes
         - var label = detailsIndex > 0 ? 'Обратно' : 'Туда';
         +result-details(route, label)
@@ -165,7 +205,5 @@ mixin result-block(index, company, tarifs, routes, selected)
 
         button.ts-button.ts-button--primary.ts-result__buy(data-toggle="modal" data-target="#tariff-modal") Купить
 
-    if selected
-      .d-lg-none.mt-2
-        a(href="#").ts-result__link Условия тарифа
-        a(href="#").ts-result__link Сменить тариф
+    
+        

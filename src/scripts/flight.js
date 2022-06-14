@@ -1,7 +1,6 @@
 $(function () {
     initExtraDropdowns();
 });
-
 function initExtraDropdowns() {
     const $extraDropdowns = $('.js-dropdown');
 

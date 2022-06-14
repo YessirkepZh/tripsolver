@@ -625,6 +625,31 @@
       .ts-sidebar__box.is--closed:last-child {
         border-bottom: 0; }
 
+.ts-result-mobile {
+  background: #FFFFFF;
+  border: 1px solid #D8E0E9;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 8px 0;
+  min-height: 120px; }
+  .ts-result-mobile__header {
+    padding: 12px 16px; }
+  .ts-result-mobile__footer {
+    padding: 12px 16px;
+    border-top: 1px solid #D8E0E9; }
+  .ts-result-mobile__subtitle {
+    color: #303030;
+    font-size: 14px;
+    margin-bottom: 6px;
+    line-height: 17px;
+    text-align: right; }
+    .ts-result-mobile__subtitle--link {
+      color: #0085CC;
+      text-decoration: none; }
+
 .ts-result {
   background: #FFFFFF;
   border: 1px solid #D8E0E9;
@@ -643,6 +668,8 @@
       min-height: 230px; }
       .ts-result:first-child {
         margin-top: 0; } }
+  .ts-result__detail_footer {
+    border-top: 1px solid #D8E0E9; }
   .ts-result:hover {
     border-color: #0085CC; }
   .ts-result:active {
@@ -658,6 +685,15 @@
     @media screen and (min-width: 992px) {
       .ts-result__body {
         flex-direction: row-reverse; } }
+    @media screen and (min-width: 576px) {
+      .ts-result__body .collapse {
+        display: flex;
+        height: auto !important;
+        visibility: visible; }
+      .ts-result__body .collapsing {
+        position: relative;
+        height: unset !important;
+        overflow: hidden; } }
   .ts-result__footer {
     cursor: default;
     border-top: 1px solid #D8E0E9;
@@ -668,7 +704,7 @@
     margin-right: -24px;
     margin-bottom: -24px; }
   .ts-result__company {
-    text-align: right;
+    text-align: left;
     flex-shrink: 0;
     width: 100px; }
     @media screen and (min-width: 992px) {
@@ -693,7 +729,8 @@
   .ts-result__price {
     color: #0085CC;
     font-size: 18px;
-    font-weight: 500; }
+    font-weight: 500;
+    text-align: right; }
     @media screen and (min-width: 992px) {
       .ts-result__price {
         font-size: 24px; } }
@@ -795,7 +832,6 @@
     margin: 0 4px; }
   .ts-result__details-wrap {
     border-radius: 4px;
-    border: 1px solid #D8E0E9;
     padding: 24px;
     margin: 8px 0; }
     .ts-result__details-wrap:last-child {

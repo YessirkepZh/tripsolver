@@ -1,8 +1,8 @@
 import flatpickr from "flatpickr";
 import ShortcutButtonsPlugin from 'shortcut-buttons-flatpickr';
 import { Russian } from "flatpickr/dist/l10n/ru.js"
-
 // sidebar mobile menu
+let isCollapsed = false;
 $( document ).ready(function() {
   $(document).on('click', '.is--select-passengers .dropdown-menu', function (e) {
     e.stopPropagation();
@@ -33,6 +33,9 @@ $( document ).ready(function() {
     } else {
       $(e.target).removeClass('is--active');
     }
+  })
+  $('#resultCollapse').on('hidden.bs.collapse', function (e) {
+    e.currentTarget.addClass('collapse2');
   })
 
 let start_day = [];
