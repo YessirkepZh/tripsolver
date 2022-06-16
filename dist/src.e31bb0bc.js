@@ -3205,8 +3205,13 @@ $(document).ready(function () {
       $(e.target).removeClass('is--active');
     }
   });
+  $('#resultCollapse').on('show.bs.collapse', function (e) {
+    $('.result-collapse-hide').css("display", "none");
+    $('.result-collapse-show').css("display", "block");
+  });
   $('#resultCollapse').on('hidden.bs.collapse', function (e) {
-    e.currentTarget.addClass('collapse2');
+    $('.result-collapse-show').css("display", "none");
+    $('.result-collapse-hide').css("display", "block");
   });
   var start_day = [];
   var second_date = (0, _flatpickr.default)(".js--dates-to", {
@@ -3266,7 +3271,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62190" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53897" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

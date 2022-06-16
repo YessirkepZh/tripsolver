@@ -81,15 +81,35 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-9">
-              <script>var something = function something() {
-  document.getElementById("#resultCollapse").style("border", "1px solid red");
-};</script>
               <div class="ts-result-mobile d-lg-none d-block">
                 <div class="ts-result-mobile__header" data-toggle="collapse" href="#resultCollapse" aria-expanded="false">
-                  <div class="row justify-content-between">
-                    <div class="col-8"><img class="ts-result__company-img" src="/fly-arystan.ca9c6f4e.png"></div>
-                    <div class="col-4">
-                      <div class="ts-result-mobile__subtitle pt-2">Рейс: KC-852</div>
+                  <div class="row justify-content-between mt-0 mb-0">
+                    <div class="col-4"><img class="ts-result__company-img" src="/fly-arystan.ca9c6f4e.png">
+                      <div class="ts-result-mobile__subtitle result-collapse-show">Рейс: KC-852</div>
+                    </div>
+                    <div class="col-8">
+                      <div class="ts-result-mobile__subtitle result-collapse-hide">Рейс: KC-852</div>
+                      <div class="result-collapse-show">
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="ts-result__details-time">
+                              <div class="ts-result__time ts-result__time--small">10:55</div>
+                              <div class="ts-result__label">NQZ</div>
+                              <div class="ts-result__description">12 июн.</div>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="ts-result__plane justify-content-between"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
+                          </div>
+                          <div class="col-4">
+                            <div class="ts-result__details-time">
+                              <div class="ts-result__time ts-result__time--small">10:55</div>
+                              <div class="ts-result__label">NQZ</div>
+                              <div class="ts-result__description">12 июн.</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -140,46 +160,6 @@
                       </div>
                       <div class="ts-result__details-wrap">
                         <div class="ts-result__subtitle">Обратно</div>
-                        <div class="ts-result__details">
-                          <div class="ts-result__details-route">
-                            <div class="ts-result__details-top">
-                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
-                              <div class="ts-result__details-more">
-                                <div class="ts-result__details-row">
-                                  <div class="ts-result__details-time">
-                                    <div class="ts-result__time ts-result__time--small">09:25</div>
-                                    <div class="ts-result__description">12 июн.</div>
-                                  </div>
-                                  <div class="ts-result__details-direction">
-                                    <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
-                                    <div class="ts-result__description">Нур-Султан</div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="ts-result__details-bottom">
-                              <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
-                              <div class="ts-result__details-more">
-                                <div class="ts-result__description ts-result__details-transfer">Пересадка: 4ч 20м</div>
-                                <div class="ts-result__details-row">
-                                  <div class="ts-result__details-time">
-                                    <div class="ts-result__time ts-result__time--small">10:55</div>
-                                    <div class="ts-result__description">12 июн.</div>
-                                  </div>
-                                  <div class="ts-result__details-direction">
-                                    <div class="ts-result__subtitle">Алматы (ALA)</div>
-                                    <div class="ts-result__description">Алматы</div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="ts-result__details-info">
-                            <div class="ts-result__subtitle ml-lg-0 ml-6">Авиакомпания: Air astana2</div>
-                            <div class="ts-result__subtitle ml-lg-0 ml-6">Рейс: KC-852</div>
-                            <div class="ts-result__subtitle ml-lg-0 ml-6">В пути: 1 час 30 мин</div>
-                          </div>
-                        </div>
                         <div class="ts-result__details">
                           <div class="ts-result__details-route">
                             <div class="ts-result__details-top">
@@ -292,12 +272,8 @@
                                 <div class="ts-result__description">В пути: 1 час 30 мин.</div>
                                 <div class="ts-result__progress-route">
                                   <div class="ts-result__progress-bar"></div>
-                                  <div class="ts-result__transfer"><img class="ts-result__transfer-icon" src="/transfer.b63a262f.svg">
-                                    <div class="ts-result__label">OVB</div>
-                                  </div>
-                                  <div class="ts-result__progress-bar"></div>
                                 </div>
-                                <div class="ts-result__description">1 пересадка</div>
+                                <div class="ts-result__description">без пересадок</div>
                               </div>
                               <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg">
                                 <div class="ts-result__label">NQZ</div>
@@ -320,8 +296,7 @@
                   </div>
                   <div class="ts-result__company"><img class="ts-result__company-img" src="/fly-arystan.ca9c6f4e.png">
                     <div class="d-lg-none">
-                      <div class="ts-result__subtitle">1 пересадка</div>
-                      <div class="ts-result__description">Новосибирск</div>
+                      <div class="ts-result__subtitle">без пересадок</div>
                     </div>
                   </div>
                 </div>
@@ -370,46 +345,6 @@
                   </div>
                   <div class="ts-result__details-wrap">
                     <div class="ts-result__subtitle">Обратно</div>
-                    <div class="ts-result__details">
-                      <div class="ts-result__details-route">
-                        <div class="ts-result__details-top">
-                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-start.15bf8eb5.svg"></div>
-                          <div class="ts-result__details-more">
-                            <div class="ts-result__details-row">
-                              <div class="ts-result__details-time">
-                                <div class="ts-result__time ts-result__time--small">09:25</div>
-                                <div class="ts-result__description">12 июн.</div>
-                              </div>
-                              <div class="ts-result__details-direction">
-                                <div class="ts-result__subtitle">Нур-Султан (TSE)</div>
-                                <div class="ts-result__description">Нур-Султан</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="ts-result__details-bottom">
-                          <div class="ts-result__plane"><img class="ts-result__plane-icon" src="/plane-end.2a45dd58.svg"></div>
-                          <div class="ts-result__details-more">
-                            <div class="ts-result__description ts-result__details-transfer">Пересадка: 4ч 20м</div>
-                            <div class="ts-result__details-row">
-                              <div class="ts-result__details-time">
-                                <div class="ts-result__time ts-result__time--small">10:55</div>
-                                <div class="ts-result__description">12 июн.</div>
-                              </div>
-                              <div class="ts-result__details-direction">
-                                <div class="ts-result__subtitle">Алматы (ALA)</div>
-                                <div class="ts-result__description">Алматы</div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="ts-result__details-info">
-                        <div class="ts-result__subtitle ml-lg-0 ml-6">Авиакомпания: Air astana2</div>
-                        <div class="ts-result__subtitle ml-lg-0 ml-6">Рейс: KC-852</div>
-                        <div class="ts-result__subtitle ml-lg-0 ml-6">В пути: 1 час 30 мин</div>
-                      </div>
-                    </div>
                     <div class="ts-result__details">
                       <div class="ts-result__details-route">
                         <div class="ts-result__details-top">

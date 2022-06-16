@@ -98,25 +98,37 @@ mixin result-details(route, label)
       +result-details-item(isLast)
       - n++;
 
+mixin result-details-mobile()
+  .row
+    .col-4
+      .ts-result__details-time
+        .ts-result__time.ts-result__time--small 10:55
+        .ts-result__label NQZ
+        .ts-result__description 12 июн.
+    .col-4
+      .ts-result__plane.justify-content-between
+          img(src=`/assets/icons/plane-start.svg`).ts-result__plane-icon
+          img(src=`/assets/icons/plane-end.svg`).ts-result__plane-icon
+    .col-4
+      .ts-result__details-time
+        .ts-result__time.ts-result__time--small 10:55
+        .ts-result__label NQZ
+        .ts-result__description 12 июн.
+
 mixin result-block(index, company, tarifs, routes, selected)
   - var href = '#result'+index;
   - var id = 'result'+index;
   
-
-  if isCollapsed
-    div ssss
-  script.
-    var something = function () {
-      document.getElementById("#resultCollapse").style("border", "1px solid red");
-    }
-  
   .ts-result-mobile.d-lg-none.d-block
     .ts-result-mobile__header(data-toggle="collapse" href="#resultCollapse"  aria-expanded="false")
-      .row.justify-content-between
-        .col-8
-          img(src=`/assets/img/company/${company}.png`).ts-result__company-img
+      .row.justify-content-between.mt-0.mb-0
         .col-4
-          .ts-result-mobile__subtitle.pt-2 Рейс: KC-852
+          img(src=`/assets/img/company/${company}.png`).ts-result__company-img
+          .ts-result-mobile__subtitle(class="result-collapse-show") Рейс: KC-852
+        .col-8
+          .ts-result-mobile__subtitle(class="result-collapse-hide") Рейс: KC-852
+          div(class="result-collapse-show")
+            +result-details-mobile
     .ts-result-mobile__body(id="resultCollapse" class="accordion-body collapse")
       .row.justify-content-between
         .col-10
@@ -124,16 +136,6 @@ mixin result-block(index, company, tarifs, routes, selected)
           each route in routes
             - var label = detailsIndex > 0 ? 'Обратно' : 'Туда';
             +result-details(route, label)
-          //-   - detailsIndex++;   
-          //- if totalTransfers == 1
-          //-   .ts-result__subtitle #{totalTransfers} пересадка
-          //-   .ts-result__description Новосибирск
-          //- else if totalTransfers > 1 
-          //-   .ts-result__subtitle #{totalTransfers} пересадки
-          //-   .ts-result__description (VNO) (KGR)
-          //- else
-            
-          //-   .ts-result__subtitle без пересадок
     
     .ts-result-mobile__footer
       if selected

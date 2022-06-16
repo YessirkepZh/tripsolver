@@ -97,7 +97,6 @@ $ts-result-padding: 24px
             margin-right: 40px  
     
         &-img
-            margin-bottom: 16px
             max-width: 100%
 
     &__content
@@ -245,9 +244,11 @@ $ts-result-padding: 24px
     &__details-wrap
         border-radius: $border-radius
         // border: 1px solid $border-color
-        padding: 24px
         margin: 8px 0
-        
+        padding: 12px 16px
+        @media screen and (min-width: $media--desktop)
+            padding: 24px
+
         &:last-child
             margin-bottom: 24px    
     
@@ -312,3 +313,13 @@ $ts-result-padding: 24px
 .ts-result__details + .ts-result__details
     border-top: 1px dashed $border-color
     padding-top: 24px
+
+.result-collapse-hide, .result-collapse-show
+    transition: all 0.4s ease-in-out
+
+.result-collapse-show
+    display: none
+    text-align: left
+
+.result-collapse-hide
+    padding-top: 12px

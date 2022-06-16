@@ -34,8 +34,13 @@ $( document ).ready(function() {
       $(e.target).removeClass('is--active');
     }
   })
+  $('#resultCollapse').on('show.bs.collapse', function (e) {
+    $('.result-collapse-hide').css("display", "none");
+    $('.result-collapse-show').css("display", "block");
+  })
   $('#resultCollapse').on('hidden.bs.collapse', function (e) {
-    e.currentTarget.addClass('collapse2');
+    $('.result-collapse-show').css("display", "none");
+    $('.result-collapse-hide').css("display", "block");
   })
 
 let start_day = [];
