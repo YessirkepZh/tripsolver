@@ -210,6 +210,17 @@ $ts-result-padding: 24px
             display: block
             margin-bottom: 4px
 
+    &__plane-mobile
+        display: flex
+        text-align: center
+        padding-top: 15px
+        &-icon
+            display: block
+            margin-bottom: 4px
+            &:last-child
+                margin-left: 40px
+                
+
     &__label
         display: block
         font-size: $font-size--xs
@@ -256,7 +267,26 @@ $ts-result-padding: 24px
         display: block
         color: $color-primary
         padding: 6px 0
-    
+
+.ts-result__details-mobile
+    margin-top: 5px
+    &-top
+        padding-right: 14px
+    .ts-result__plane-mobile 
+       &::before
+            content: ''
+            position: absolute
+            display: block
+            width: 2px
+            left: 47%
+            top: 25%
+            bottom: 17px
+            background: $border-color
+            transform: rotate(90deg) 
+    &-time
+        margin-right: 24px
+        &:last-child
+            text-align: right
 .ts-result__details
     margin-top: 24px
 

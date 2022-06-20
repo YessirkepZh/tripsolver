@@ -99,21 +99,19 @@ mixin result-details(route, label)
       - n++;
 
 mixin result-details-mobile()
-  .row
-    .col-4
-      .ts-result__details-time
-        .ts-result__time.ts-result__time--small 10:55
-        .ts-result__label NQZ
-        .ts-result__description 12 июн.
-    .col-4
-      .ts-result__plane.justify-content-between
-          img(src=`/assets/icons/plane-start.svg`).ts-result__plane-icon
-          img(src=`/assets/icons/plane-end.svg`).ts-result__plane-icon
-    .col-4
-      .ts-result__details-time
-        .ts-result__time.ts-result__time--small 10:55
-        .ts-result__label NQZ
-        .ts-result__description 12 июн.
+  .row.justify-content-between.ts-result__details-mobile
+    .ts-result__details-mobile-time
+      .ts-result__time.ts-result__time--small 10:55
+      .ts-result__label NQZ
+      .ts-result__description 12 июн.
+    .ts-result__details-mobile-top
+        .ts-result__plane-mobile
+          img(src=`/assets/icons/plane-start.svg`).ts-result__plane-mobile-icon
+          img(src=`/assets/icons/plane-end.svg`).ts-result__plane-mobile-icon
+    .ts-result__details-mobile-time
+      .ts-result__time.ts-result__time--small 10:55
+      .ts-result__label NQZ
+      .ts-result__description 12 июн.
 
 mixin result-block(index, company, tarifs, routes, selected)
   - var href = '#result'+index;
