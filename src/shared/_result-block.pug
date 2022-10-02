@@ -100,33 +100,39 @@ mixin result-details(route, label)
 
 mixin result-details-mobile()
   .row.justify-content-between.ts-result__details-mobile
-    .ts-result__details-mobile-time
+    .ts-result__details-mobile-top
       .ts-result__time.ts-result__time--small 10:55
       .ts-result__label NQZ
       .ts-result__description 12 июн.
-    .ts-result__details-mobile-top
-        .ts-result__plane-mobile
-          img(src=`/assets/icons/plane-start.svg`).ts-result__plane-mobile-icon
-          img(src=`/assets/icons/plane-end.svg`).ts-result__plane-mobile-icon
+    .ts-result__details-mobile-plane
+      img(src=`/assets/icons/plane-start.svg`).ts-result__details-mobile-plane-icon
+      div.ts-result__details-mobile-plane-line
+      img(src=`/assets/icons/plane-end.svg`).ts-result__details-mobile-plane-icon
     .ts-result__details-mobile-time
       .ts-result__time.ts-result__time--small 10:55
       .ts-result__label NQZ
       .ts-result__description 12 июн.
 
-mixin result-block(index, company, tarifs, routes, selected)
+mixin result-block(index, company, tarifs, routes, selected)  
   - var href = '#result'+index;
   - var id = 'result'+index;
   
-  .ts-result-mobile.d-lg-none.d-block
+  .ts-result-mobile.d-block.d-lg-none
     .ts-result-mobile__header(data-toggle="collapse" href="#resultCollapse"  aria-expanded="false")
-      .row.justify-content-between.mt-0.mb-0
-        .col-4
-          img(src=`/assets/img/company/${company}.png`).ts-result__company-img
-          .ts-result-mobile__subtitle(class="result-collapse-show") Рейс: KC-852
-        .col-8
-          .ts-result-mobile__subtitle(class="result-collapse-hide") Рейс: KC-852
-          div(class="result-collapse-show")
+      div(class="result-collapse-hide").pt-0
+        .row.justify-content-between
+          .col-4
+            img(src=`/assets/img/company/${company}.png`).ts-result__company-img
+            .ts-result-mobile__subtitle--under Рейс: KC-8523s
+          .col-8
             +result-details-mobile
+      div(class="result-collapse-show").pt-0
+        .row.justify-content-between
+          .col-4
+            img(src=`/assets/img/company/${company}.png`).ts-result__company-img
+          .col-8
+            div.mt-1
+              .ts-result-mobile__subtitle Рейс: KC-8523s
     .ts-result-mobile__body(id="resultCollapse" class="accordion-body collapse")
       .row.justify-content-between
         .col-10

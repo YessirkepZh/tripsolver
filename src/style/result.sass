@@ -27,6 +27,9 @@ $ts-result-padding: 24px
         &--link
             color: $color-primary
             text-decoration: none
+        &--under
+            font-size: $font-size--xs
+            text-align: start
 
 .ts-result
     background: $color-white
@@ -272,17 +275,22 @@ $ts-result-padding: 24px
     margin-top: 5px
     &-top
         padding-right: 14px
-    .ts-result__plane-mobile 
-       &::before
-            content: ''
-            position: absolute
+    &-plane 
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        &-icon
             display: block
-            width: 2px
-            left: 47%
-            top: 25%
-            bottom: 17px
+            width: 24px
+            height: 24px
+            margin-bottom: 4px
+        &-line
             background: $border-color
-            transform: rotate(90deg) 
+            height: 2px
+            width: 3vh
+            margin-left: 5px
+            margin-right: 5px
     &-time
         margin-right: 24px
         &:last-child
